@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Роман Ретинский](https://up.htmlacademy.ru/adaptive/20/user/1290155).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Кравченко](https://up.htmlacademy.ru/adaptive/20/user/544023).
 
 ---
 
