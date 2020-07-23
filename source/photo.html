@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="page__body">
+  <body>
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
         <img src="https://via.placeholder.com/150x150">
@@ -40,14 +40,14 @@
     <main class="page-main">
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <section class="gallery">
-        <p class="text-style--blue">
+        <p class="gallery__text">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <article class="gallery-post">
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Анна</cite>
-            <p class="text-style--blue">
+            <p class="gallery__text">
               Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
           </blockquote>
@@ -57,7 +57,7 @@
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Левон</cite>
-            <p class="text-style--blue">
+            <p class="gallery__text">
               Вчера он на луну летал, сегодня в руки к нам попал.
             </p>
           </blockquote>
@@ -67,7 +67,7 @@
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Антон</cite>
-            <p class="text-style--blue">
+            <p class="gallery__text">
               Соседи будут рады!
             </p>
           </blockquote>
@@ -77,7 +77,7 @@
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Борис</cite>
-            <p class="text-style--blue">
+            <p class="gallery__text">
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
           </blockquote>
@@ -87,7 +87,7 @@
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Сергей</cite>
-            <p class="text-style--blue">
+            <p class="gallery__text">
               Самая кубанская в мире!
             </p>
           </blockquote>
@@ -97,7 +97,7 @@
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Максим</cite>
-            <p class="text-style--blue">
+            <p class="gallery__text">
               Где снег-то?
             </p>
           </blockquote>
@@ -107,40 +107,40 @@
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Надежда</cite>
-            <p class="text-style--blue">
+            <p class="gallery__text">
               Всем GM и взаимные лайки!
             </p>
           </blockquote>
           <button type="button"><span>Нравится: 2560</span></button>
         </article>
-        <p class="text-style--blue">
+        <p class="gallery__text">
           Затмите их всех! Выкладывайте все, что накопилось в телефоне!
         </p>
       </section>
-      <section>
+      <section class="send">
         <form action="https://echo.htmlacademy.ru/courses" method="post">
           <img src="https://via.placeholder.com/150x150">
-          <ul>
-            <li>
+          <ul class="send-list">
+            <li class="send-list__item">
               <label>
                 <input type="radio" name="editing" value="crop" checked>
                 <img src="https://via.placeholder.com/50x50">
               </label>
             </li>
-            <li>
+            <li class="send-list__item">
               <label>
                 <input type="radio" name="editing" value="fill">
                 <img src="https://via.placeholder.com/50x50">
               </label>
             </li>
-            <li>
+            <li class="send-list__item">
               <label>
                 <input type="radio" name="editing" value="contrast">
                 <img src="https://via.placeholder.com/50x50">
               </label>
             </li>
           </ul>
-          <div>
+          <div class="send__buttons">
             <button type="submit">Запостить</button>
             <button type="button" disabled>Отмена</button>
           </div>
@@ -162,13 +162,13 @@
           <a class="page-footer__link" href="">Ellipse</a>
         </li>
       </ul>
+      <!--
       <p class="page-footer__text">
         Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <svg>
-          </svg>
         </a>
       </p>
+      -->
     </footer>
   </body>
 </html>

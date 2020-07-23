@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="page__body">
+  <body>
     <header class="page-header">
       <a class="page-header__logo">
         <img src="https://via.placeholder.com/150x150">
@@ -77,19 +77,19 @@
         <ul class="advantages__list">
           <li class="advantages__item">
             <h2 class="advantages__title">Поднимает настроение</h2>
-            <p class="text-style--blue">
+            <p class="advantages__text">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </li>
           <li class="advantages__item">
             <h2 class="advantages__title">Меняет мир вокруг</h2>
-            <p class="text-style--blue">
+            <p class="advantages__text">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </li>
           <li class="advantages__item">
             <h2 class="advantages__title">Заводит новых друзей</h2>
-            <p class="text-style--blue">
+            <p class="advantages__text">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </li>
@@ -126,76 +126,88 @@
           <ul>
             <li>
               <button class="slider__toggle slider__toggle--current" type="button">
+                <span class="visually-hidden">Кнопка 1</span>
               </button>
             </li>
             <li>
               <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Кнопка 2</span>
               </button>
             </li>
             <li>
               <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Кнопка 3</span>
               </button>
             </li>
           </ul>
         </div>
       </section>
-      <div>
-        <table>
-          <tr>
-            <td>
-              <h3>Стандарт</h3>
-              <p>3,99 USD</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Розовый фильтр</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Смайлики</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Комментарии</p>
-            </td>
-          </tr>
+      <div class="rate">
+        <table class="rate-table">
+          <thead>
+            <tr>
+              <th>
+                Стандарт
+                <p>
+                  3,99 USD
+                </p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p class="rate-table__option">Розовый фильтр</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="rate-table__option">Смайлики</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="rate-table__option">Комментарии</p>
+              </td>
+            </tr>
+          </tbody>
         </table>
-        <ul>
+        <ul class="rate__toggle-list">
           <li>
-            <button class="slider__toggle slider__toggle--current" type="button">
+            <button class="rate__toggle rate__toggle--current" type="button">
+              <span class="visually-hidden">Кнопка 1</span>
             </button>
           </li>
           <li>
-            <button class="slider__toggle">
+            <button class="rate__toggle" type="button">
+              <span class="visually-hidden">Кнопка 2</span>
             </button>
           </li>
           <li>
-            <button class="slider__toggle">
+            <button class="rate__toggle" type="button">
+              <span class="visually-hidden">Кнопка 3</span>
             </button>
           </li>
         </ul>
       </div>
-      <section>
-        <p>
+      <section class="communication">
+        <p class="communication__text">
           Остались вопросы? Свяжитесь с нами!
         </p>
-        <h2>Звоните:</h2>
-        <a href="tel:+78125556666">
+        <h3 class="communication__title">Звоните:</h3>
+        <a class="communication__link" href="tel:+78125556666">
           +7 (812) 555-66-66
         </a>
-        <h2>Пишите:</h2>
-        <a href="mailto:mail@htmlacademy.ru">
+        <h3 class="communication__title">Пишите:</h3>
+        <a class="communication__link" href="mailto:mail@htmlacademy.ru">
           mail@htmlacademy.ru
         </a>
-        <h2>Приезжайте в гости:</h2>
-        <p>
+        <h3 class="communication__title">Приезжайте в гости:</h3>
+        <p class="communication__link">
           ул. Большая Конюшенная, 19/8
         </p>
-        <div>
-          <a href="https://www.google.com/maps/place/Большая+Конюшенная+ул.,+19,+Санкт-Петербург,+191186/@59.938794,30.323083,16z/data=!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833?hl=ru">
+        <div class="map">
+          <a class="map__link" href="https://www.google.com/maps/place/Большая+Конюшенная+ул.,+19,+Санкт-Петербург,+191186/@59.938794,30.323083,16z/data=!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833?hl=ru">
             <img src="https://via.placeholder.com/150x150">
           </a>
         </div>
@@ -216,13 +228,13 @@
           <a class="page-footer__link" href="">Ellipse</a>
         </li>
       </ul>
+      <!--
       <p class="page-footer__text">
         Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <svg>
-          </svg>
         </a>
       </p>
+      -->
     </footer>
   </body>
 </html>
