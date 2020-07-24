@@ -44,18 +44,26 @@
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
         <form class="contest__form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <label class="contest__label">
-            Фамилия:
-            <input class="contest__input" type="text" name="surname" placeholder="Укажите фамилию *">
-          </label>
-          <label class="contest__label">
-            Имя:
-            <input class="contest__input" type="text" name="name" placeholder="Введите ваше имя *">
-          </label>
-          <label class="contest__label">
-            Отчество:
-            <input class="contest__input" type="text" name="middle-name" placeholder="Ну и отчество тоже">
-          </label>
+          <ul>
+            <li>
+              <label class="contest__label">
+                Фамилия:
+                <input class="contest__input" type="text" name="surname" placeholder="Укажите фамилию *">
+              </label>
+            </li>
+            <li>
+              <label class="contest__label">
+                Имя:
+                <input class="contest__input" type="text" name="name" placeholder="Введите ваше имя *">
+              </label>
+            </li>
+            <li>
+              <label class="contest__label">
+                Отчество:
+                <input class="contest__input" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+              </label>
+            </li>
+          </ul>
           <fieldset class="contest__fieldset">
             <legend class="contest__title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="contest-list">
@@ -97,14 +105,16 @@
               </li>
             </ul>
           </fieldset>
-          <label class="contest__label">
-            Номер телефона
-            <input class="contest__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
-          </label>
-          <label class="contest__label">
-            Адрес почты
-            <input class="contest__input" type="email" name="email" placeholder="Введите почту *">
-          </label>
+          <div>
+            <label class="contest__label">
+              Номер телефона
+              <input class="contest__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+            </label>
+            <label class="contest__label">
+              Адрес почты
+              <input class="contest__input" type="email" name="email" placeholder="Введите почту *">
+            </label>
+          </div>
           <fieldset class="contest__fieldset">
             <legend class="contest__title">С каким приложением путешествовали?</legend>
             <ul class="contest-list">
