@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,24 +16,24 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">
               Конкурс
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">
               HTML Academy
             </a>
           </li>
@@ -38,7 +41,9 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
+      <div class="page-main__background">
+        <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
+      </div>
       <section class="intro">
         <img src="https://via.placeholder.com/150x150">
         <div class="download">
@@ -62,7 +67,7 @@
               </a>
             </li>
           </ul>
-          <p class="text-style">
+          <p class="intro__text-style">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
         </div>
@@ -74,26 +79,28 @@
         <p class="advantages__text">
           Нам есть, что вам предложить!
         </p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h2 class="advantages__title">Поднимает настроение</h2>
-            <p class="advantages__text">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h2 class="advantages__title">Меняет мир вокруг</h2>
-            <p class="advantages__text">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h2 class="advantages__title">Заводит новых друзей</h2>
-            <p class="advantages__text">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
+        <div class="advantages__container">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h2 class="advantages__title">Поднимает настроение</h2>
+              <p class="advantages__text advantages__text--information">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h2 class="advantages__title">Меняет мир вокруг</h2>
+              <p class="advantages__text advantages__text--information">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h2 class="advantages__title">Заводит новых друзей</h2>
+              <p class="advantages__text advantages__text--information">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -106,7 +113,7 @@
                 <p class="reviews__text">
                   Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
                 </p>
-                <span>
+                <span class="reviews__info">
                   25 лет, водитель трамвая
                 </span>
               </div>
@@ -119,7 +126,7 @@
                 <p class="reviews__text">
                   Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
                 </p>
-                <span>
+                <span class="reviews__info">
                   25 лет, водитель трамвая
                 </span>
               </div>
@@ -132,7 +139,7 @@
                 <p class="reviews__text">
                   Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
                 </p>
-                <span>
+                <span class="reviews__info">
                   25 лет, водитель трамвая
                 </span>
               </div>
@@ -158,12 +165,12 @@
         </div>
       </section>
       <section class="rate">
-        <table class="rate-table">
-          <thead>
+        <table class="rate__table">
+          <thead class="rate__head">
             <tr>
-              <th>
+              <th class="rate__title">
                 Стандарт
-                <p>
+                <p class="rate__title rate__title--price">
                   3,99 USD
                 </p>
               </th>
@@ -172,17 +179,17 @@
           <tbody>
             <tr>
               <td>
-                <p class="rate-table__option">Розовый фильтр</p>
+                <p class="rate__option">Розовый фильтр</p>
               </td>
             </tr>
             <tr>
               <td>
-                <p class="rate-table__option">Смайлики</p>
+                <p class="rate__option">Смайлики</p>
               </td>
             </tr>
             <tr>
               <td>
-                <p class="rate-table__option">Комментарии</p>
+                <p class="rate__option">Комментарии</p>
               </td>
             </tr>
           </tbody>
