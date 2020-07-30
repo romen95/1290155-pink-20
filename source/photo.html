@@ -3,34 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
+      <a class="page-header__logo">
         <img src="https://via.placeholder.com/150x150">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">
               Конкурс
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">
               HTML Academy
             </a>
           </li>
@@ -38,7 +39,9 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-main__background">
+        <h1 class="page-main__title page-main__title--height">Фотографии пользователей</h1>
+      </div>
       <section class="gallery">
         <p class="gallery__text">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
@@ -47,71 +50,71 @@
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Анна</cite>
-            <p class="gallery__text">
+            <p class="gallery__text gallery__text--height">
               Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
           </blockquote>
-          <button type="button"><span>Нравится: 215</span></button>
+          <button class="gallery-post__button" type="button"><span class="gallery-post__like">Нравится: 215</span></button>
         </article>
         <article class="gallery-post">
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Левон</cite>
-            <p class="gallery__text">
+            <p class="gallery__text gallery__text--height">
               Вчера он на луну летал, сегодня в руки к нам попал.
             </p>
           </blockquote>
-          <button type="button"><span>Нравится: 356</span></button>
+          <button class="gallery-post__button" type="button"><span class="gallery-post__like">Нравится: 356</span></button>
         </article>
         <article class="gallery-post">
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Антон</cite>
-            <p class="gallery__text">
+            <p class="gallery__text gallery__text--height">
               Соседи будут рады!
             </p>
           </blockquote>
-          <button type="button"><span>Нравится: 666</span></button>
+          <button class="gallery-post__button" type="button"><span class="gallery-post__like">Нравится: 666</span></button>
         </article>
         <article class="gallery-post">
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Борис</cite>
-            <p class="gallery__text">
+            <p class="gallery__text gallery__text--height">
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
           </blockquote>
-          <button type="button"><span>Нравится: 215</span></button>
+          <button class="gallery-post__button" type="button"><span class="gallery-post__like">Нравится: 215</span></button>
         </article>
         <article class="gallery-post">
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Сергей</cite>
-            <p class="gallery__text">
+            <p class="gallery__text gallery__text--height">
               Самая кубанская в мире!
             </p>
           </blockquote>
-          <button type="button"><span>Нравится: 4</span></button>
+          <button class="gallery-post__button" type="button"><span class="gallery-post__like">Нравится: 4</span></button>
         </article>
         <article class="gallery-post">
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Максим</cite>
-            <p class="gallery__text">
+            <p class="gallery__text gallery__text--height">
               Где снег-то?
             </p>
           </blockquote>
-          <button type="button"><span>Нравится: 150</span></button>
+          <button class="gallery-post__button" type="button"><span class="gallery-post__like">Нравится: 150</span></button>
         </article>
         <article class="gallery-post">
           <img src="https://via.placeholder.com/150x150">
           <blockquote>
             <cite class="gallery-post__user">Надежда</cite>
-            <p class="gallery__text">
+            <p class="gallery__text gallery__text--height">
               Всем GM и взаимные лайки!
             </p>
           </blockquote>
-          <button type="button"><span>Нравится: 2560</span></button>
+          <button class="gallery-post__button" type="button"><span class="gallery-post__like">Нравится: 2560</span></button>
         </article>
         <p class="gallery__text">
           Затмите их всех! Выкладывайте все, что накопилось в телефоне!
@@ -120,20 +123,20 @@
       <section class="send">
         <form action="https://echo.htmlacademy.ru/courses" method="post">
           <img src="https://via.placeholder.com/150x150">
-          <ul class="send-list">
-            <li class="send-list__item">
+          <ul class="send__list">
+            <li class="send__item">
               <label>
                 <input type="radio" name="editing" value="crop" checked>
                 <img src="https://via.placeholder.com/50x50">
               </label>
             </li>
-            <li class="send-list__item">
+            <li class="send__item">
               <label>
                 <input type="radio" name="editing" value="fill">
                 <img src="https://via.placeholder.com/50x50">
               </label>
             </li>
-            <li class="send-list__item">
+            <li class="send__item">
               <label>
                 <input type="radio" name="editing" value="contrast">
                 <img src="https://via.placeholder.com/50x50">
@@ -141,8 +144,8 @@
             </li>
           </ul>
           <div class="send__buttons">
-            <button type="submit">Запостить</button>
-            <button type="button" disabled>Отмена</button>
+            <button class="send__button" type="submit">Запостить</button>
+            <button class="send__button" type="button">Отмена</button>
           </div>
         </form>
       </section>

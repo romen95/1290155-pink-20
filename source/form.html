@@ -3,34 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
+      <a class="page-header__logo">
         <img src="https://via.placeholder.com/150x150">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">
               Конкурс
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">
               HTML Academy
             </a>
           </li>
@@ -38,13 +39,15 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-main__background">
+        <h1 class="page-main__title page-main__title--height">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
       <section class="contest">
         <p class="contest__text">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
         <form class="contest__form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <ul>
+          <ul class="contest__name-list">
             <li>
               <label class="contest__label">
                 Фамилия:
@@ -65,45 +68,47 @@
             </li>
           </ul>
           <fieldset class="contest__fieldset">
-            <legend class="contest__title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="contest-list">
-              <li class="contest-list__item">
-                <label class="contest_text">
-                  <input type="checkbox" name="selfie" checked>
-                  Сделал селфи с акулой
-                </label>
-              </li>
-              <li class="contest-list__item">
-                <label class="contest_text">
-                  <input type="checkbox" name="beach" checked>
-                  Обгорел на пляже
-                </label>
-              </li>
-              <li class="contest-list__item">
-                <label class="contest_text">
-                  <input type="checkbox" name="chack">
-                  Видел Чака Норриса
-                </label>
-              </li>
-              <li class="contest-list__item">
-                <label class="contest_text">
-                  <input type="checkbox" name="souvenirs">
-                  Накупил сувениров
-                </label>
-              </li>
-              <li class="contest-list__item">
-                <label class="contest_text">
-                  <input type="checkbox" name="tower" checked>
-                  Удержал башню
-                </label>
-              </li>
-              <li class="contest-list__item">
-                <label class="contest_text">
-                  <input type="checkbox" name="hotel">
-                  Разгромил отель
-                </label>
-              </li>
-            </ul>
+            <div class="contest__container">
+              <legend class="contest__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="contest-list">
+                <li class="contest-list__item">
+                  <label class="contest__text">
+                    <input type="checkbox" name="selfie" checked>
+                    Сделал селфи с акулой
+                  </label>
+                </li>
+                <li class="contest-list__item">
+                  <label class="contest__text">
+                    <input type="checkbox" name="beach" checked>
+                    Обгорел на пляже
+                  </label>
+                </li>
+                <li class="contest-list__item">
+                  <label class="contest__text">
+                    <input type="checkbox" name="chack">
+                    Видел Чака Норриса
+                  </label>
+                </li>
+                <li class="contest-list__item">
+                  <label class="contest__text">
+                    <input type="checkbox" name="souvenirs">
+                    Накупил сувениров
+                  </label>
+                </li>
+                <li class="contest-list__item">
+                  <label class="contest__text">
+                    <input type="checkbox" name="tower" checked>
+                    Удержал башню
+                  </label>
+                </li>
+                <li class="contest-list__item">
+                  <label class="contest__text">
+                    <input type="checkbox" name="hotel">
+                    Разгромил отель
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <div>
             <label class="contest__label">
@@ -116,27 +121,29 @@
             </label>
           </div>
           <fieldset class="contest__fieldset">
-            <legend class="contest__title">С каким приложением путешествовали?</legend>
-            <ul class="contest-list">
-              <li class="contest-list__item">
-                <label class="contest_text">
-                  <input type="radio" name="os" value="ios" checked>
-                  Pink для iOS
-                </label>
-              </li>
-              <li class="contest-list__item">
-                <label class="contest_text">
-                  <input type="radio" name="os" value="android">
-                  Pink на Android
-                </label>
-              </li>
-              <li class="contest-list__item">
-                <label class="contest_text">
-                  <input type="radio" name="os" value="windows">
-                  Windows Phone
-                </label>
-              </li>
-            </ul>
+            <div class="contest__container">
+              <legend class="contest__title">С каким приложением путешествовали?</legend>
+              <ul class="contest-list">
+                <li class="contest-list__item">
+                  <label class="contest__text">
+                    <input type="radio" name="os" value="ios" checked>
+                    Pink для iOS
+                  </label>
+                </li>
+                <li class="contest-list__item">
+                  <label class="contest__text">
+                    <input type="radio" name="os" value="android">
+                    Pink на Android
+                  </label>
+                </li>
+                <li class="contest-list__item">
+                  <label class="contest__text">
+                    <input type="radio" name="os" value="windows">
+                    Windows Phone
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <label class="contest__title">
             Опишите свои эмоции
@@ -144,8 +151,8 @@
           </label>
           <button class="contest__button" type="submit">Отправить форму</button>
         </form>
-        <small>
-          * - обязательные поля
+        <small class="contest__small">
+          <span class="contest__small contest__small--star">*</span> - обязательные поля
         </small>
       </section>
     </main>
