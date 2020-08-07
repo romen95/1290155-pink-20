@@ -1,3 +1,16 @@
+.download {
+  background-color: @basic-darkgrey;
+  padding-top: 28px;
+  padding-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 300px;
+  }
+}
+
 .download__button {
   display: block;
   font-weight: bold;
@@ -9,6 +22,11 @@
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 29px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    line-height: 18px;
+  }
 }
 
 .download__list {
@@ -25,23 +43,4 @@
 
 .download__link {
   display: block;
-  background-repeat: no-repeat;
-
-  &--apple {
-    background-image: url("../img/logo-apple.svg");
-    width: 47px;
-    height: 56px;
-  }
-
-  &--android {
-    background-image: url("../img/logo-android.svg");
-    width: 43px;
-    height: 47px;
-  }
-
-  &--microsoft {
-    background-image: url("../img/logo-microsoft.svg");
-    width: 44px;
-    height: 41px;
-  }
 }
