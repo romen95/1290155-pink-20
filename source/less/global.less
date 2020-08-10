@@ -8,6 +8,7 @@ body {
   padding: 0;
   font-family: @basic-font;
   font-weight: normal;
+  box-sizing: border-box;
 }
 
 a {
@@ -34,18 +35,18 @@ img {
 }
 
 .container {
-  width: 280px;
+  max-width: 320px;
   padding-left: 20px;
   padding-right: 20px;
 
   @media (min-width: @tablet-width) {
-    width: 620px;
+    max-width: 620px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 130px;
     padding-right: 130px;
   }
