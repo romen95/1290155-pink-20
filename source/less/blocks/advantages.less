@@ -21,8 +21,26 @@
     line-height: 68px;
   }
 
+  &--left {
+    @media (min-width: @tablet-width) {
+      width: auto;
+      font-weight: normal;
+      text-align: left;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: auto;
+      text-align: left;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
   &--information {
     margin: 0;
+    margin-bottom: 43px;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
@@ -31,10 +49,14 @@
 
     @media (min-width: @tablet-width) {
       width: auto;
+      text-align: left;
     }
 
     @media (min-width: @desktop-width) {
       width: auto;
+      text-align: center;
+      font-size: 18px;
+      line-height: 30px;
     }
   }
 }
@@ -50,7 +72,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 780px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+}
+
+.advantages__item {
+  @media (min-width: @desktop-width) {
+    width: 252px;
   }
 }
 
@@ -59,32 +89,159 @@
   font-size: 18px;
   line-height: 24px;
   margin: 0;
+  margin-bottom: 24px;
   padding: 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  &--bold {
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      padding: 0;
+      width: 168px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+      padding: 0;
+      width: auto;
+      font-size: 30px;
+      line-height: 30px;
+      text-align: left;
+    }
+  }
 }
 
 .advantages__container {
   background-color: @basic-lightgrey;
+  padding-top: 103px;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
 .advantages__image {
   display: block;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  width: 157px;
-  height: 320px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    width: 268px;
-    height: 471px;
+    display: none;
     margin: 0;
+  }
+
+  &--medium {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.advantages__block {
+  padding-bottom: 70px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 77px;
+  }
+}
+
+.advantages__additionally {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 58px;
+    background-color: @basic-lightgrey;
+  }
+}
+
+.advantages__chunk {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 523px;
+  }
+}
+
+.advantages__svg {
+  @media (min-width: @tablet-width) {
+    display: block;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    width: 238px;
+    height: 276px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    width: 298px;
+    height: 345px;
+  }
+}
+
+.advantages__link {
+  @media (min-width: @tablet-width) {
+    color: @basic-red;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @basic-red;
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.advantages__screen {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 }
