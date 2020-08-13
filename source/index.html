@@ -139,7 +139,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews container">
+      <section class="reviews slider container">
         <div class="reviews__wrapper">
           <ul class="reviews__list">
             <li class="reviews__item slider__item slider__item--active">
@@ -202,35 +202,78 @@
         </div>
       </section>
       <section class="rate">
-        <table class="rate__table">
-          <thead class="rate__head">
-            <tr>
-              <th class="rate__title">
-                Стандарт
-                <p class="rate__title rate__title--price">
-                  3,99 USD
-                </p>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <p class="rate__option">Розовый фильтр</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p class="rate__option">Смайлики</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p class="rate__option">Комментарии</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="rate__wrapper container">
+          <table class="rate__table">
+            <thead class="rate__head">
+              <tr>
+                <th>
+                </th>
+                <th class="rate__title">
+                  База
+                  <p class="rate__title rate__title--price">
+                    1,99 USD
+                  </p>
+                </th>
+                <th class="rate__title">
+                  Стандарт
+                  <p class="rate__title rate__title--price">
+                    3,99 USD
+                  </p>
+                </th>
+                <th class="rate__title">
+                  Анлим
+                  <p class="rate__title rate__title--price">
+                    9,99 USD
+                  </p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p class="rate__option">Розовый фильтр</p>
+                </td>
+                <td>
+                  <span>Да</span>
+                </td>
+                <td>
+                  <span>Да</span>
+                </td>
+                <td>
+                  <span>Да</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="rate__option">Смайлики</p>
+                </td>
+                <td>
+                  <span>Нет</span>
+                </td>
+                <td>
+                  <span>Да</span>
+                </td>
+                <td>
+                  <span>Да</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="rate__option">Комментарии</p>
+                </td>
+                <td>
+                  <span>Нет</span>
+                </td>
+                <td>
+                  <span>Нет</span>
+                </td>
+                <td>
+                  <span>Да</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <ul class="rate__toggle-list">
           <li>
             <button class="rate__toggle rate__toggle--current" type="button">
@@ -250,50 +293,70 @@
         </ul>
       </section>
       <section class="communication">
-        <p class="communication__text">
-          Остались вопросы? Свяжитесь с нами!
-        </p>
-        <h3 class="communication__title">Звоните:</h3>
-        <a class="communication__link" href="tel:+78125556666">
-          +7 (812) 555-66-66
-        </a>
-        <h3 class="communication__title">Пишите:</h3>
-        <a class="communication__link" href="mailto:mail@htmlacademy.ru">
-          mail@htmlacademy.ru
-        </a>
-        <h3 class="communication__title">Приезжайте в гости:</h3>
-        <p class="communication__link">
-          ул. Большая Конюшенная, 19/8
-        </p>
+        <div class="communication__wrapper container">
+          <p class="communication__text">
+            Остались вопросы? Свяжитесь с нами!
+          </p>
+          <ul class="communication__list">
+            <li class="communication__item communication__item--left">
+              <h3 class="communication__title">Звоните:</h3>
+              <a class="communication__link" href="tel:+78125556666">
+                +7 (812) 555-66-66
+              </a>
+            </li>
+            <li class="communication__item  communication__item--right">
+              <h3 class="communication__title">Пишите:</h3>
+              <a class="communication__link" href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
+            </li>
+            <li class="communication__item communication__item--center">
+              <h3 class="communication__title">Приезжайте в гости:</h3>
+              <p class="communication__link">
+                ул. Большая Конюшенная, 19/8
+              </p>
+            </li>
+          </ul>
+        </div>
         <div class="map">
           <a class="map__link" href="https://www.google.com/maps/place/Большая+Конюшенная+ул.,+19,+Санкт-Петербург,+191186/@59.938794,30.323083,16z/data=!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833?hl=ru">
-            <img src="https://via.placeholder.com/150x150">
+            <span class="map__image">
+              <span class="visually-hidden">Карта местности</span>
+            </span>
           </a>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <a class="page-footer__logo">
-        <img src="https://via.placeholder.com/150x150">
-      </a>
-      <ul class="page-footer__list">
-        <li class="page-footer__item">
-          <a class="page-footer__link" href="">Twitter</a>
-        </li>
-        <li class="page-footer__item">
-          <a class="page-footer__link" href="">Facebook</a>
-        </li>
-        <li class="page-footer__item">
-          <a class="page-footer__link" href="">Ellipse</a>
-        </li>
-      </ul>
-      <!--
-      <p class="page-footer__text">
-        Разработано
-        <a href="https://htmlacademy.ru/intensive/adaptive">
+    <footer class="page-footer container">
+      <div  class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img class="page-footer__image" src="img/logo-pink-blue-mobile.svg">
         </a>
-      </p>
-      -->
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--twitter" href="">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--facebook" href="">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--youtube" href="">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__communication">
+          <p class="page-footer__text">
+            Разработано
+          </p>
+          <a class="page-footer__icon" href="https://htmlacademy.ru/intensive/adaptive">
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
