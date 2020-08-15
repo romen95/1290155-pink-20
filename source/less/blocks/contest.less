@@ -14,18 +14,6 @@
   text-align: center;
   margin: 0 auto;
 
-  &--form {
-    display: none;
-
-    @media (min-width: @tablet-width) {
-      display: inline;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: inline;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     width: 490px;
     font-size: 18px;
@@ -36,6 +24,18 @@
     width: 756px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  &--form {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: inline;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: inline;
+    }
   }
 }
 
