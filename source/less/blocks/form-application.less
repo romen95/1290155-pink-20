@@ -1,0 +1,37 @@
+.form-application {
+  background-color: @basic-lightgrey;
+
+  @media (min-width: @tablet-width) {
+    background-color: inherit;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 433px;
+    padding: 0;
+    margin-right: 130px;
+  }
+}
+
+.form-application__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-application__item {
+  margin-top: 40px;
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
+}
+
+.form-application__text {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: @basic-grey;
+}

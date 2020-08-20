@@ -10,6 +10,12 @@
     <header class="page-header">
       <div class="page-header__block container">
         <a class="page-header__link" href="index.html">
+          <picture>
+            <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
+            <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+            <img src="img/logo-pink-white-mobile.svg">
+          </picture>
+          <!--
           <svg class="page-header__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
             <g>
               <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -18,6 +24,7 @@
               <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
             </g>
           </svg>
+        -->
         </a>
         <nav class="nav">
           <button class="nav__toggle" type="button">
@@ -65,72 +72,72 @@
         <p class="contest__lead container">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="contest__lead contest__lead--form">Пожалуйста, заполните форму ниже:</span>
         </p>
-        <form class="contest__form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <div class="contest__flex">
-            <div class="contest__element contest__element--first container">
-              <ul class="contest__name-list">
+        <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <div class="form__flex">
+            <div class="form__block form-mainInfo container">
+              <ul class="form-mainInfo__name-list">
                 <li>
-                  <label class="contest__label">
-                    <span class="contest__caption">
+                  <label class="form__label">
+                    <span class="form-mainInfo__caption">
                       Фамилия:
                     </span>
-                    <input class="contest__input" type="text" name="surname" placeholder="Укажите фамилию *">
+                    <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию *">
                   </label>
                 </li>
                 <li>
-                  <label class="contest__label">
-                    <span class="contest__caption">
+                  <label class="form__label">
+                    <span class="form-mainInfo__caption">
                       Имя:
                     </span>
-                    <input class="contest__input" type="text" name="name" placeholder="Введите ваше имя *">
+                    <input class="form__input" type="text" name="name" placeholder="Введите ваше имя *">
                   </label>
                 </li>
                 <li>
-                  <label class="contest__label">
-                    <span class="contest__caption">
+                  <label class="form__label">
+                    <span class="form-mainInfo__caption">
                       Отчество:
                     </span>
-                    <input class="contest__input" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+                    <input class="form__input" type="text" name="middle-name" placeholder="Ну и отчество тоже">
                   </label>
                 </li>
               </ul>
             </div>
-            <div class="contest__element contest__element--second contest__container container">
-              <fieldset class="contest__fieldset">
-                <legend class="contest__title">Ваши безбашенные достижения в путешествии</legend>
-                <ul class="contest__list contest__list--grid">
-                  <li class="contest__item">
-                    <label class="contest__text">
+            <div class="form__block form-achievements container">
+              <fieldset class="form__fieldset">
+                <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+                <ul class="form-achievements__list">
+                  <li class="form-achievements__item">
+                    <label class="form-achievements__text">
                       <input type="checkbox" name="selfie" checked>
                       Сделал селфи с акулой
                     </label>
                   </li>
-                  <li class="contest__item">
-                    <label class="contest__text">
+                  <li class="form-achievements__item">
+                    <label class="form-achievements__text">
                       <input type="checkbox" name="beach" checked>
                       Обгорел на пляже
                     </label>
                   </li>
-                  <li class="contest__item">
-                    <label class="contest__text">
+                  <li class="form-achievements__item">
+                    <label class="form-achievements__text">
                       <input type="checkbox" name="chack">
                       Видел Чака Норриса
                     </label>
                   </li>
-                  <li class="contest__item">
-                    <label class="contest__text">
+                  <li class="form-achievements__item">
+                    <label class="form-achievements__text">
                       <input type="checkbox" name="souvenirs">
                       Накупил сувениров
                     </label>
                   </li>
-                  <li class="contest__item">
-                    <label class="contest__text">
+                  <li class="form-achievements__item">
+                    <label class="form-achievements__text">
                       <input type="checkbox" name="tower" checked>
                       Удержал башню
                     </label>
                   </li>
-                  <li class="contest__item">
-                    <label class="contest__text">
+                  <li class="form-achievements__item">
+                    <label class="form-achievements__text">
                       <input type="checkbox" name="hotel">
                       Разгромил отель
                     </label>
@@ -138,47 +145,47 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="contest__element contest__element--third container">
-              <fieldset class="contest__fieldset">
-                <legend class="contest__title contest__title--none">Контактная информация</legend>
-                <ul class="contest__name-list contest__name-list--contact">
-                  <li class="contest__item">
-                    <label class="contest__label contest__label--column contest__label--icon contest__label--icon-phone">
-                      <span class="contest__caption contest__caption--order">
+            <div class="form__block form-contactInfo container">
+              <fieldset class="form__fieldset">
+                <legend class="form__title form__title--none">Контактная информация</legend>
+                <ul class="form-contactInfo__name-list">
+                  <li class="form-contactInfo__item">
+                    <label class="form-contactInfo__label form-contactInfo__icon-phone">
+                      <span class="form-contactInfo__caption">
                         Номер телефона
                       </span>
-                      <input class="contest__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+                      <input class="form__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
                     </label>
                   </li>
-                  <li class="contest__item">
-                    <label class="contest__label contest__label--column contest__label--icon contest__label--icon-mail">
-                      <span class="contest__caption contest__caption--order">
+                  <li class="form-contactInfo__item">
+                    <label class="form-contactInfo__label form-contactInfo__icon-mail">
+                      <span class="form-contactInfo__caption">
                         Адрес почты
                       </span>
-                      <input class="contest__input" type="email" name="email" placeholder="Введите почту *">
+                      <input class="form__input" type="email" name="email" placeholder="Введите почту *">
                     </label>
                   </li>
                 </ul>
               </fieldset>
             </div>
-            <div class="contest__element contest__element--fourth contest__container container">
-              <fieldset class="contest__fieldset">
-                <legend class="contest__title">С каким приложением путешествовали?</legend>
-                <ul class="contest__list">
-                  <li class="contest__item">
-                    <label class="contest__text">
+            <div class="form__block form-application container">
+              <fieldset class="form__fieldset">
+                <legend class="form__title">С каким приложением путешествовали?</legend>
+                <ul class="form-application__list">
+                  <li class="form-application__item">
+                    <label class="form-application__text">
                       <input type="radio" name="os" value="ios" checked>
                       Pink для iOS
                     </label>
                   </li>
-                  <li class="contest__item">
-                    <label class="contest__text">
+                  <li class="form-application__item">
+                    <label class="form-application__text">
                       <input type="radio" name="os" value="android">
                       Pink на Android
                     </label>
                   </li>
-                  <li class="contest__item">
-                    <label class="contest__text">
+                  <li class="form-application__item">
+                    <label class="form-application__text">
                       <input type="radio" name="os" value="windows">
                       Windows Phone
                     </label>
@@ -186,17 +193,17 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="contest__element contest__element--fifth container">
-              <fieldset class="contest__fieldset">
-                <legend class="contest__title">Опишите свои эмоции</legend>
-                <textarea class="contest__input contest__input--width" name="comment" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <div class="form__block form-comment container">
+              <fieldset class="form__fieldset">
+                <legend class="form__title">Опишите свои эмоции</legend>
+                <textarea class="form__input form-comment__input" name="comment" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </fieldset>
             </div>
           </div>
-          <div class="contest__bottom container">
-            <button class="contest__button" type="submit">Отправить форму</button>
-            <small class="contest__small">
-              <span class="contest__star">*</span> - обязательные поля
+          <div class="form__bottom container">
+            <button class="form__button" type="submit">Отправить форму</button>
+            <small class="form__small">
+              <span class="form__star">*</span> - обязательные поля
             </small>
           </div>
         </form>

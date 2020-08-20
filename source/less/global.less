@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  min-width: 320px;
+  min-width: @mobile-width;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -38,22 +38,17 @@ img {
 }
 
 .container {
-  max-width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
+  padding: 0 20px;
+  min-width: @mobile-width;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    max-width: 620px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
+    padding: 0 20px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 1200px;
-    padding-left: 130px;
-    padding-right: 130px;
-    margin: 0 auto;
+    padding: 0 130px;
+    max-width: @desktop-width;
   }
 }

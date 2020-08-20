@@ -11,6 +11,8 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: @desktop-width) {
@@ -18,7 +20,7 @@
   }
 }
 
-.reviews__author-name {
+.reviews__author {
   display: block;
   font-weight: bold;
   font-size: 18px;
@@ -30,18 +32,6 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 24px;
-    line-height: 30px;
-  }
-}
-
-.reviews__author-info {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
   }
 
   @media (min-width: @desktop-width) {

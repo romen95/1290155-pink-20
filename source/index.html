@@ -10,7 +10,12 @@
     <header class="page-header">
       <div class="page-header__block container">
         <a class="page-header__link">
-          <svg class="page-header__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+          <picture>
+            <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
+            <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+            <img src="img/logo-pink-white-mobile.svg">
+          </picture>
+          <!--<svg class="page-header__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
             <g>
               <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
               <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -18,18 +23,10 @@
               <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
             </g>
           </svg>
+        -->
         </a>
         <nav class="nav">
           <button class="nav__toggle" type="button">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
-              <g id="miu">
-                <g id="editor_list_view_hambuger_menu_glyph">
-                  <g>
-                    <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                  </g>
-                </g>
-              </g>
-            </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="nav__list">
@@ -59,35 +56,40 @@
     </header>
     <main class="page-main">
       <section class="intro">
-        <h1 class="intro__title">Взгляните на жизнь иначе!</h1>
-        <span class="intro__image"></span>
-        <div class="download">
-          <a class="button download__button" href="https://www.apple.com/ru/ios/app-store/">
-            Скачать приложение
-          </a>
-          <ul class="download__list">
-            <li class="download__item">
-              <a class="download__link" href="https://www.apple.com/ru/ios/app-store/">
-                <img src="img/logo-apple.svg" width="47px" height="56px" alt="Логотип компании Apple">
-                <span class="visually-hidden">App Store</span>
-              </a>
-            </li>
-            <li class="download__item">
-              <a class="download__link" href="https://play.google.com/store">
-                <img src="img/logo-android.svg" width="43px" height="47px" alt="Логотип Android">
-                <span class="visually-hidden">Android</span>
-              </a>
-            </li>
-            <li class="download__item">
-              <a class="download__link" href="https://www.microsoft.com/ru-RU/store/apps">
-                <img src="img/logo-microsoft.svg" width="44px" height="41px" alt="Логотип Microsoft">
-                <span class="visually-hidden">Microsoft</span>
-              </a>
-            </li>
-          </ul>
-          <p class="intro__text-style">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+        <div class="intro__picture">
+          <h1 class="visually-hidden">Мобильное приложение Pink</h1>
+        </div>
+        <div class="intro__downloads container">
+          <div class="intro__wrapper">
+            <p class="intro__slogan">
+              Взгляните<br class="intro__break">
+              на жизнь иначе!
+            </p>
+            <h2 class="visually-hidden">Скачать приложение</h2>
+            <a class="intro__button button" href="https://www.apple.com/ru/ios/app-store/">
+              Скачать приложение
+            </a>
+            <ul class="intro__icons icons-list">
+              <li class="icons-list__item">
+                <a class="icons-list__link" href="https://www.apple.com/ru/ios/app-store/">
+                  <img src="img/logo-apple.svg" width="47px" height="56px" aria-label="App Store" alt="Логотип компании Apple">
+                </a>
+              </li>
+              <li class="icons-list__item">
+                <a class="icons-list__link" href="https://play.google.com/store">
+                  <img src="img/logo-android.svg" width="43px" height="47px" aria-label="Android" alt="Логотип Android">
+                </a>
+              </li>
+              <li class="icons-list__item">
+                <a class="icons-list__link" href="https://www.microsoft.com/ru-RU/store/apps">
+                  <img src="img/logo-microsoft.svg" width="44px" height="41px" aria-label="Microsoft" alt="Логотип Microsoft">
+                </a>
+              </li>
+            </ul>
+            <p class="intro__text-style">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -99,87 +101,85 @@
             Нам есть, что вам предложить!
           </p>
         </div>
-        <div class="advantages__container container">
-          <img src="img/iphone-screen-3-tablet@1x.png" width="268px" height="471px" class="advantages__image advantages__image--medium">
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <img class="advantages__screen" src="img/iphone-screen-1-desktop@1x.png" height="302px" width="300px">
-              <h2 class="advantages__title">Поднимает настроение</h2>
-              <p class="advantages__text advantages__text--information">
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-              </p>
-            </li>
-            <li class="advantages__item">
-              <img class="advantages__screen" src="img/iphone-screen-2-desktop@1x.png" height="302px" width="300px">
-              <h2 class="advantages__title">Меняет мир вокруг</h2>
-              <p class="advantages__text advantages__text--information">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-              </p>
-            </li>
-            <li class="advantages__item">
-              <img class="advantages__screen" src="img/iphone-screen-3-desktop@1x.png" height="302px" width="300px">
-              <h2 class="advantages__title">Заводит новых друзей</h2>
-              <p class="advantages__text advantages__text--information">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-              </p>
-            </li>
-          </ul>
-          <img src="img/iphone-screen-mobile@1x.png" width="157px" height="320px" class="advantages__image">
-        </div>
-        <div class="advantages__additionally container">
-          <span class="advantages__svg"></span>
-          <div class="advantages__chunk">
-            <h2 class="advantages__title advantages__title--bold">Эффект на 24 часа!</h2>
-            <p class="advantages__text advantages__text--left">
-              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-            </p>
-            <a href="" class="advantages__link">
-              Узнать больше об исследовании
-            </a>
+        <div class="advantages__wrapper">
+          <div class="advantages__container container">
+            <img src="img/iphone-screen-3-tablet@1x.png" width="268px" height="471px" class="advantages__image advantages__image--medium">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <img src="img/iphone-screen-1-desktop@1x.png" height="302px" width="300px">
+                <h2 class="advantages__title">Поднимает настроение</h2>
+                <p class="advantages__text advantages__text--information">
+                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                </p>
+              </li>
+              <li class="advantages__item">
+                <img src="img/iphone-screen-2-desktop@1x.png" height="302px" width="300px">
+                <h2 class="advantages__title">Меняет мир вокруг</h2>
+                <p class="advantages__text advantages__text--information">
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                </p>
+              </li>
+              <li class="advantages__item">
+                <img src="img/iphone-screen-3-desktop@1x.png" height="302px" width="300px">
+                <h2 class="advantages__title">Заводит новых друзей</h2>
+                <p class="advantages__text advantages__text--information">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                </p>
+              </li>
+            </ul>
+            <img src="img/iphone-screen-mobile@1x.png" width="157px" height="320px" class="advantages__image">
           </div>
         </div>
+        <section class="effect">
+          <div class="effect__block container">
+            <img class="effect__svg" src="img/icon-timer.svg">
+            <div class="effect__chunk">
+              <h2 class="effect__title">Эффект на 24 часа!</h2>
+              <p class="effect__text">
+                Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+              </p>
+              <a href="" class="effect__link">
+                Узнать больше об исследовании
+              </a>
+            </div>
+          </div>
+        </section>
       </section>
       <section class="reviews slider container">
         <div class="reviews__wrapper">
           <ul class="reviews__list">
             <li class="reviews__item slider__item slider__item--active">
-              <div class="reviews__author-info">
-                <b class="reviews__author-name">
-                  Николай Петров
-                </b>
-                <p class="reviews__text">
-                  &#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;
-                </p>
-                <span class="reviews__info">
-                  25 лет, водитель трамвая
-                </span>
-              </div>
+              <b class="reviews__author">
+                Николай Петров
+              </b>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+              <span class="reviews__info">
+                25 лет, водитель трамвая
+              </span>
             </li>
             <li class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <b class="reviews__author-name">
-                  Николай Петров
-                </b>
-                <p class="reviews__text">
-                  &#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;
-                </p>
-                <span class="reviews__info">
-                  25 лет, водитель трамвая
-                </span>
-              </div>
+              <b class="reviews__author">
+                Николай Петров
+              </b>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+              <span class="reviews__info">
+                25 лет, водитель трамвая
+              </span>
             </li>
             <li class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <b class="reviews__author-name">
-                  Николай Петров
-                </b>
-                <p class="reviews__text">
-                  &#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;
-                </p>
-                <span class="reviews__info">
-                  25 лет, водитель трамвая
-                </span>
-              </div>
+              <b class="reviews__author">
+                Николай Петров
+              </b>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+              <span class="reviews__info">
+                25 лет, водитель трамвая
+              </span>
             </li>
           </ul>
           <ul class="slider__toggle-list">
@@ -298,13 +298,13 @@
             Остались вопросы? Свяжитесь с нами!
           </p>
           <ul class="communication__list">
-            <li class="communication__item communication__item--left">
+            <li class="communication__item">
               <h3 class="communication__title">Звоните:</h3>
               <a class="communication__link" href="tel:+78125556666">
                 +7 (812) 555-66-66
               </a>
             </li>
-            <li class="communication__item  communication__item--right">
+            <li class="communication__item communication__item--order">
               <h3 class="communication__title">Пишите:</h3>
               <a class="communication__link" href="mailto:mail@htmlacademy.ru">
                 mail@htmlacademy.ru
@@ -319,11 +319,8 @@
           </ul>
         </div>
         <div class="map">
-          <a class="map__link" href="https://www.google.com/maps/place/Большая+Конюшенная+ул.,+19,+Санкт-Петербург,+191186/@59.938794,30.323083,16z/data=!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833?hl=ru">
-            <span class="map__image">
-              <span class="visually-hidden">Карта местности</span>
-            </span>
-          </a>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.320894616062876!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1593431932958!5m2!1sru!2sru" width="320px" height="200px" allowfullscreen="" aria-hidden="false">
+          </iframe>
         </div>
       </section>
     </main>

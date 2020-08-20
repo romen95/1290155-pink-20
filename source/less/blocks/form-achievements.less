@@ -1,0 +1,53 @@
+.form-achievements {
+  background-color: @basic-lightgrey;
+
+  @media (min-width: @tablet-width) {
+    background-color: inherit;
+    order: 4;
+  }
+}
+
+.form-achievements__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @extra-lightgrey;
+    border-radius: 2px;
+  }
+}
+
+.form-achievements__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+  }
+}
+
+.form-achievements__item {
+  margin-top: 40px;
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
+}
+
+.form-achievements__text {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: @basic-grey;
+}
