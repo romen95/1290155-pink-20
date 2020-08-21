@@ -1,10 +1,102 @@
 .gallery__text {
   font-size: 14px;
-  line-height: 30px;
-  text-align: center;
+  line-height: 24px;
+  text-align: left;
   color: @basic-grey;
-  &--height {
-    line-height: 24px;
-    text-align: left;
+}
+
+.gallery__lead {
+  font-size: 14px;
+  line-height: 30px;
+  color: @basic-grey;
+  text-align: center;
+  margin: 0 auto;
+  width: 255px;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 600px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.gallery__break {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.gallery__post {
+  background-color: @basic-lightgrey;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+
+  &--background {
+    background-color: transparent;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.gallery__block {
+  background-color: @basic-lightgrey;
+}
+
+.gallery__user {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: @basic-grey;
+}
+
+.gallery__button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.gallery__like {
+  font-size: 12px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  color: @basic-red;
+}
+
+.gallery__grid {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 54px;
   }
 }

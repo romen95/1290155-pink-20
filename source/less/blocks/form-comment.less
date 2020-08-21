@@ -1,0 +1,29 @@
+.form-comment {
+  @media (min-width: @tablet-width) {
+    order: 5;
+  }
+}
+
+.form-comment__input {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  border: 2px solid @extra-lightgrey;
+  border-radius: 1px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 496px;
+    height: 189px;
+    margin: 0 auto;
+    margin-top: 42px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 816px;
+    height: 124px;
+  }
+}

@@ -1,76 +1,32 @@
-.contest__text {
-  margin: 0;
-  padding: 0;
+.contest__lead {
   font-size: 14px;
   line-height: 30px;
+  color: @basic-grey;
   text-align: center;
-  color: @basic-grey;
-}
+  margin: 0 auto;
 
-.contest__label {
-  font-size: 14px;
-  line-height: 30px;
-  color: @basic-red;
-  text-transform: uppercase;
-}
-
-.contest__input::placeholder {
-  font-size: 18px;
-  line-height: 30px;
-  color: @basic-grey;
-}
-
-.contest__title {
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: @basic-red;
-}
-
-.contest__name-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contest__fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contest__container {
-  background-color: @basic-lightgrey;
-}
-
-.contest__text {
-  font-size: 18px;
-  line-height: 30px;
-  color: @basic-grey;
-}
-
-.contest__button {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: @white;
-  background: @basic-green;
-  border: 2px solid @basic-green;
-  border-radius: 1px;
-}
-
-.contest__small {
-  display: block;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  &--star {
-    display: inline;
-    font-size: 14px;
+  @media (min-width: @tablet-width) {
+    width: 490px;
+    font-size: 18px;
     line-height: 30px;
-    text-transform: uppercase;
-    color: @basic-red;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 756px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &--form {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: inline;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: inline;
+    }
   }
 }

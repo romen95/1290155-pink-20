@@ -1,5 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
-  width: 320px;
+  min-width: @mobile-width;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   margin: 0;
   padding: 0;
   font-family: @basic-font;
@@ -7,6 +15,40 @@ body {
 }
 
 a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: @mobile-width;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+    max-width: @desktop-width;
+  }
 }
