@@ -68,21 +68,23 @@
   border-radius: 50%;
   width: 48px;
   height: 48px;
-
-  &--twitter {
-    position: relative;
-  }
-
-  &--facebook {
-    position: relative;
-  }
-
-  &--youtube {
-    position: relative;
-  }
+  position: relative;
 }
 
-.page-footer__link--twitter::before {
+.page-footer__link:hover,
+.page-footer__link:focus {
+  border: 3px solid rgba(40, 54, 69, 1);
+}
+
+.page-footer__link:active {
+  border: 3px solid rgba(40, 54, 69, 0.1);
+}
+
+.page-footer__link:active .page-footer__svg {
+  opacity: 0.3;
+}
+
+.page-footer__svg--twitter {
   content: "";
   position: absolute;
   top: 50%;
@@ -91,12 +93,9 @@
   height: 14px;
   margin-top: -7px;
   margin-left: -9px;
-  background-image: url("../img/icon-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.page-footer__link--facebook::before {
+.page-footer__svg--facebook {
   content: "";
   position: absolute;
   top: 50%;
@@ -105,12 +104,9 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -4px;
-  background-image: url("../img/icon-facebook.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.page-footer__link--youtube::before {
+.page-footer__svg--youtube {
   content: "";
   position: absolute;
   top: 50%;
@@ -119,16 +115,17 @@
   height: 13px;
   margin-top: -6px;
   margin-left: -7px;
-  background-image: url("../img/icon-youtube.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.page-footer__icon {
-  display: block;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  width: 27px;
-  height: 34px;
+.page-footer__svg--academy {
   margin-left: 15px;
+}
+
+.page-footer__svg--academy:hover path,
+.page-footer__svg--academy:focus path{
+  fill: @basic-grey;
+}
+
+.page-footer__svg--academy:active path {
+  opacity: 0.3;
 }
