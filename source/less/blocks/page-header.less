@@ -1,7 +1,8 @@
 .page-header {
-  min-height: 66px;
   background-color: rgba(0, 0, 0, 0.3);
+  min-height: 66px;
   margin-bottom: -66px;
+  position: relative;
   z-index: 1;
 
   @media (min-width: @tablet-width) {
@@ -17,22 +18,59 @@
 }
 
 .page-header__block {
-  padding-top: 22px;
-  padding-bottom: 22px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   box-sizing: border-box;
+  min-height: 66px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 43px;
-    padding-bottom: 43px;
+    min-height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    min-height: 110px;
   }
 }
 
+.page-header__block--grey {
+  background-color: @basic-grey;
+  min-height: 70px;
+  box-shadow: 0 1px 0 #000000;
+
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
+}
+
+.page-header__block--no-js {
+  background-color: @basic-grey;
+}
+
 .page-header__link {
+  position: absolute;
+  top: 5px;
+  left: -52px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    top: 26px;
+    left: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 26px;
+    left: 130px;
+  }
+}
+
+.page-header__link[href]:hover path,
+.page-header__link[href]:focus path {
+  fill: @basic-red;
+}
+
+.page-header__link[href]:active path {
+  fill: @white;
+  opacity: 0.3;
 }
 
 .page-header__logo {

@@ -111,6 +111,7 @@
 }
 
 .intro__button {
+  width: 280px;
   display: block;
   font-weight: bold;
   font-size: 18px;
@@ -121,9 +122,24 @@
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 29px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 21px;
     line-height: 18px;
   }
+}
+
+.intro__button:hover,
+.intro__button:focus {
+  color: @basic-red;
+  background-color: @white;
+}
+
+.intro__button:active {
+  color: rgba(210, 40, 86, 0.3);
 }

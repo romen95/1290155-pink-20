@@ -36,12 +36,23 @@
   border-radius: 1px;
   width: 100%;
   box-sizing: border-box;
+  outline: none;
 
   &::placeholder {
     font-size: 18px;
     line-height: 30px;
     color: @basic-grey;
   }
+}
+
+.form__input:hover,
+.form__input:focus {
+  border-color: @basic-grey;
+}
+
+.form__input:active,
+.form__input:focus {
+  border-color: @basic-red;
 }
 
 .form__name-list {

@@ -1,0 +1,51 @@
+.logo path {
+  fill: @white;
+}
+
+.logo__glasses {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo__glasses-crop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.logo__stars {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.logo__stars path {
+  @media (min-width: @desktop-width) {
+    fill: @basic-red;
+  }
+}
+
+.logo__star {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.logo__star path {
+  @media (min-width: @desktop-width) {
+    fill: @basic-red;
+  }
+}
