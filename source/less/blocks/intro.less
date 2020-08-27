@@ -1,3 +1,7 @@
+.intro {
+  position: relative;
+}
+
 .intro__picture {
   background-color: @basic-darkgrey;
   background-image: url("../img/iphone-hand-mobile@1x.png"),
@@ -5,6 +9,7 @@
   background-repeat: no-repeat no-repeat;
   background-position: left bottom, center 0;
   min-height: 462px;
+  background-size: auto, cover;
 
   @media (min-width: @tablet-width) {
     background-color: @basic-darkgrey;
@@ -47,21 +52,27 @@
 }
 
 .intro__slogan {
+  display: block;
   position: absolute;
-  top: 80px;
+  top: 90px;
+  left: 50%;
   margin: 0 auto;
-  margin-bottom: 39px;
+  margin-left: -125px;
   padding: 0;
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
   text-align: center;
   color: @white;
+  width: 250px;
 
   @media (min-width: @tablet-width) {
     position: static;
     font-size: 40px;
     line-height: 48px;
+    margin: 0 auto;
+    margin-bottom: 39px;
+    width: auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -82,7 +93,7 @@
 .intro__downloads {
   background-color: @basic-darkgrey;
   padding-top: 28px;
-  padding-bottom: 38px;
+  padding-bottom: 31px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -100,6 +111,7 @@
 }
 
 .intro__button {
+  width: 280px;
   display: block;
   font-weight: bold;
   font-size: 18px;
@@ -110,9 +122,24 @@
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 29px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 21px;
     line-height: 18px;
   }
+}
+
+.intro__button:hover,
+.intro__button:focus {
+  color: @basic-red;
+  background-color: @white;
+}
+
+.intro__button:active {
+  color: rgba(210, 40, 86, 0.3);
 }

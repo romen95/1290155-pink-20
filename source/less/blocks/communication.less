@@ -60,6 +60,29 @@
   color: @basic-red;
 }
 
+.communication__paragraph {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: @basic-red;
+}
+
+.communication__link:hover,
+.communication__link:focus {
+  color: @basic-grey;
+  text-decoration: underline;
+}
+
+.communication__link:active {
+  opacity: 0.3;
+  color: @basic-grey;
+  text-decoration: none;
+}
+
 .communication__list {
   width: 241px;
   list-style: none;
@@ -71,11 +94,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 25px;
   }
 
   @media (min-width: @desktop-width) {
     width: auto;
-    display: flex;
   }
 }
 
@@ -93,10 +116,6 @@
   &--center {
     @media (min-width: @tablet-width) {
       margin: 0 auto;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin: 0;
     }
   }
 }

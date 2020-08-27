@@ -1,34 +1,41 @@
+.nav {
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 130px;
+  }
+}
+
 .nav__list {
   display: none;
   list-style: none;
   padding: 0;
   margin: 0;
 
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
   @media (min-width: @desktop-width) {
     display: flex;
   }
 }
 
-.nav--closed .nav__list {
-  display: none;
-}
+.nav__item {
+  text-align: center;
+  background-color: @basic-grey;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
-.nav--opened .nav__list {
-  display: block;
+  @media (min-width: @desktop-width) {
+    text-align: start;
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
 
 .nav__link {
+  padding: 16px 0;
   display: block;
-  background-color: @basic-grey;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
-  align-items: center;
   text-transform: uppercase;
   color: @white;
 
@@ -43,17 +50,74 @@
   }
 }
 
+.nav__link[href]:hover,
+.nav__link[href]:focus {
+  color: @basic-red;
+}
+
+.nav__link[href]:active {
+  color: @white;
+  opacity: 0.3;
+}
+
+.nav__link:not([href]) {
+  border-bottom: 2px solid @white;
+}
+
+.nav--opened .nav__link:active {
+  color: @basic-red;
+  opacity: 0.3;
+}
+
+.nav--opened .nav__link:not([href]) {
+  border: none;
+}
+
 .nav__toggle {
+  position: absolute;
+  top: 21px;
+  right: 20px;
   display: block;
   border: none;
   background-color: transparent;
   padding: 0;
   margin: 0;
-  background-image: url("../img/icon-menu-burger.svg");
-  width: 50px;
-  height: 24px;
+
+  @media (min-width: @tablet-width) {
+    top: 43px;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+.nav__toggle:hover path,
+.nav__toggle:focus path {
+  fill: @basic-red;
+}
+
+.nav__toggle:active path {
+  fill: @basic-red;
+  opacity: 0.3;
+}
+
+.nav__svg--cross {
+  display: none;
+}
+
+.nav--opened .nav__list {
+  display: block;
+}
+
+.nav--opened .nav__svg--cross {
+  display: block;
+}
+
+.nav--opened .nav__svg--burger {
+  display: none;
+}
+
+.nav--no-js .nav__list {
+  display: block;
 }

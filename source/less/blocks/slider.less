@@ -13,6 +13,7 @@
   display: flex;
   width: 56px;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: @desktop-width) {
     display: none;
@@ -28,4 +29,29 @@
   opacity: 0.3;
   border: none;
   border-radius: 50%;
+}
+
+.slider__toggle:hover,
+.slider__toggle:focus {
+  opacity: 0.6;
+}
+
+.slider__toggle:active {
+  opacity: 0.1;
+}
+
+.slider__toggle--current {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 3px solid @basic-grey;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.slider__toggle--current:hover,
+.slider__toggle--current:focus,
+.slider__toggle--current:active {
+  opacity: 1;
 }

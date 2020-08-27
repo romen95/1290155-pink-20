@@ -1,32 +1,76 @@
 .page-header {
-  display: flex;
-  align-items: center;
-  height: 66px;
-  background-color: @black;
-  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0.3);
+  min-height: 66px;
   margin-bottom: -66px;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
-    height: 110px;
+    min-height: 110px;
     margin-bottom: -110px;
   }
 
   @media (min-width: @desktop-width) {
     justify-content: flex-start;
-    height: 110px;
+    min-height: 110px;
     margin-bottom: -110px;
   }
 }
 
 .page-header__block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
+  box-sizing: border-box;
+  min-height: 66px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    min-height: 110px;
+  }
+}
+
+.page-header__block--grey {
+  background-color: @basic-grey;
+  min-height: 70px;
+  box-shadow: 0 1px 0 #000000;
+
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
+}
+
+.page-header__block--no-js {
+  background-color: @basic-grey;
 }
 
 .page-header__link {
+  position: absolute;
+  top: 5px;
+  left: -52px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    top: 26px;
+    left: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 26px;
+    left: 130px;
+  }
+}
+
+.page-header__link[href]:hover path,
+.page-header__link[href]:focus path {
+  fill: @basic-red;
+}
+
+.page-header__link[href]:active path {
+  fill: @white;
+  opacity: 0.3;
 }
 
 .page-header__logo {
@@ -40,4 +84,54 @@
   @media (min-width: @desktop-width) {
     height: 40px;
   }
+}
+
+.page-header__toggle {
+  display: block;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header--opened {
+  background-color: @basic-grey;
+  opacity: 1;
+  box-shadow: 0 1px 0 #000000;
+}
+
+.page-header__svg {
+  display: none;
+}
+
+.page-header__svg--cross {
+  display: none;
+}
+
+.page-header__svg--burger {
+  display: block;
+}
+
+.page-header--opened .page-header__svg--burger {
+  display: none;
+}
+
+.page-header--opened .page-header__svg--cross {
+  display: block;
+}
+
+.page-header--opened .nav {
+  display: block;
+}
+
+.page-header--nojs {
+  background-color: @basic-grey;
+}
+
+.page-header--nojs .nav {
+  display: block;
 }
