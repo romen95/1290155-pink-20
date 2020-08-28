@@ -1,5 +1,6 @@
 .form-application {
   background-color: @basic-lightgrey;
+  padding-top: 40px;
 
   @media (min-width: @tablet-width) {
     background-color: inherit;
@@ -13,6 +14,10 @@
   }
 }
 
+.form-application__title {
+  margin-bottom: 41px;
+}
+
 .form-application__list {
   list-style: none;
   padding: 0;
@@ -20,7 +25,7 @@
 }
 
 .form-application__item {
-  margin-top: 40px;
+  margin-bottom: 45px;
 
   @media (min-width: @desktop-width) {
     width: auto;
@@ -34,4 +39,41 @@
   line-height: 30px;
   text-align: center;
   color: @basic-grey;
+}
+
+.form-application input {
+  display: none;
+}
+
+.form-application__item label {
+  position: relative;
+  text-align: left;
+  margin-left: 70px;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-application__radio-icon {
+  position: absolute;
+  top: -6px;
+  left: -69px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid @extra-lightgrey;
+  border-radius: 50%;
+}
+
+.form-application__input:checked + .form-application__radio-icon {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -6px;
+  left: -69px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/icon-point.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
 }

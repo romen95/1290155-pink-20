@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 40px;
+  padding-top: 57px;
   padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
@@ -51,6 +51,15 @@
 
 .page-footer__logo {
   display: block;
+}
+
+.page-footer__logo[href]:hover path,
+.page-footer__logo[href]:focus path {
+  fill: @basic-red;
+}
+
+.page-footer__logo[href]:active {
+  opacity: 0.3;
 }
 
 .page-footer__list {
