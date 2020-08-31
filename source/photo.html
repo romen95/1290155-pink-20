@@ -76,7 +76,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__background container">
+      <div class="page-main__background">
         <h1 class="page-main__title page-main__title--width">Фотографии пользователей</h1>
       </div>
       <section class="gallery">
@@ -91,12 +91,14 @@
             <img src="img/panorama-mobile@1x.jpg">
           </picture>
           <div class="container">
-            <div class="gallery__block ">
+            <div class="gallery__block gallery__block--position">
               <b class="gallery__user">Анна</b>
+              <span class="gallery__timer">(5 минут назад)</span>
               <p class="gallery__text">
-                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                Прыгать или нет? Напишите в комментарии свой совет и<br>
+                смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
-              <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 215</span></button>
+              <button class="gallery__button gallery__button--position" type="button"><span class="gallery__like">Нравится: 215</span></button>
             </div>
           </div>
         </article>
@@ -107,13 +109,14 @@
               <source srcset="img/photo-car-tablet@1x.jpg" media="(min-width: 660px)">
               <img src="img/photo-car-mobile@1x.jpg">
             </picture>
-            <div>
+            <div class="gallery__block">
               <b class="gallery__user">Левон</b>
+              <span class="gallery__timer">(5 часов назад)</span>
               <p class="gallery__text">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
+              <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 356</span></button>
             </div>
-            <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 356</span></button>
           </article>
           <article class="gallery__post">
             <picture>
@@ -121,13 +124,14 @@
               <source srcset="img/photo-drumset-tablet@1x.jpg" media="(min-width: 660px)">
               <img src="img/photo-drumset-mobile@1x.jpg">
             </picture>
-            <div>
+            <div class="gallery__block">
               <b class="gallery__user">Антон</b>
+              <span class="gallery__timer">(12 часов назад)</span>
               <p class="gallery__text">
                 Соседи будут рады!
               </p>
+              <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 666</span></button>
             </div>
-            <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 666</span></button>
           </article>
           <article class="gallery__post">
             <picture>
@@ -135,13 +139,14 @@
               <source srcset="img/photo-window-tablet@1x.jpg" media="(min-width: 660px)">
               <img src="img/photo-window-mobile@1x.jpg">
             </picture>
-            <div>
+            <div class="gallery__block">
               <b class="gallery__user">Борис</b>
+              <span class="gallery__timer">(20 часов назад)</span>
               <p class="gallery__text">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
+              <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 215</span></button>
             </div>
-            <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 215</span></button>
           </article>
           <article class="gallery__post">
             <picture>
@@ -149,13 +154,14 @@
               <source srcset="img/photo-fair-tablet@1x.jpg" media="(min-width: 660px)">
               <img src="img/photo-fair-mobile@1x.jpg">
             </picture>
-            <div>
+            <div class="gallery__block">
               <b class="gallery__user">Сергей</b>
+              <span class="gallery__timer">(25 часов назад)</span>
               <p class="gallery__text">
                 Самая кубанская в мире!
               </p>
+              <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 4</span></button>
             </div>
-            <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 4</span></button>
           </article>
           <article class="gallery__post">
             <picture>
@@ -163,13 +169,14 @@
               <source srcset="img/photo-pov-tablet@1x.jpg" media="(min-width: 660px)">
               <img src="img/photo-pov-mobile@1x.jpg">
             </picture>
-            <div>
+            <div class="gallery__block">
               <b class="gallery__user">Максим</b>
+              <span class="gallery__timer">(40 часов назад)</span>
               <p class="gallery__text">
                 Где снег-то?
               </p>
+              <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 150</span></button>
             </div>
-            <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 150</span></button>
           </article>
           <article class="gallery__post">
             <picture>
@@ -177,13 +184,14 @@
               <source srcset="img/photo-wing-tablet@1x.jpg" media="(min-width: 660px)">
               <img src="img/photo-wing-mobile@1x.jpg">
             </picture>
-            <div>
+            <div class="gallery__block">
               <b class="gallery__user">Надежда</b>
+              <span class="gallery__timer">(45 часов назад)</span>
               <p class="gallery__text">
                 Всем GM и взаимные лайки!
               </p>
+              <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 2560</span></button>
             </div>
-            <button class="gallery__button" type="button"><span class="gallery__like">Нравится: 2560</span></button>
           </article>
         </div>
         <p class="gallery__lead">
@@ -193,28 +201,48 @@
       </section>
       <section class="send">
         <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <img src="https://via.placeholder.com/150x150">
+          <picture>
+            <source srcset="img/photo-road-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-road-tablet@1x.jpg" media="(min-width: 660px)">
+            <img class="send__image" src="img/photo-road-mobile@1x.jpg">
+          </picture>
           <ul class="send__list">
             <li class="send__item">
-              <label>
-                <input type="radio" name="editing" value="crop" checked>
-                <img src="https://via.placeholder.com/50x50">
+              <label class="send__label">
+                <input class="send__input" type="checkbox" name="crop" checked>
+                <svg class="send__svg send__svg--crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path class="send__path" fill="#283645" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                </svg>
               </label>
             </li>
             <li class="send__item">
-              <label>
-                <input type="radio" name="editing" value="fill">
-                <img src="https://via.placeholder.com/50x50">
+              <label class="send__label">
+                <input class="send__input" type="checkbox" name="fill">
+                <svg class="send__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path class="send__path" fill="#283645" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                  <rect class="send__path" y="40" width="48" height="3"/>
+                </svg>
               </label>
             </li>
             <li class="send__item">
-              <label>
-                <input type="radio" name="editing" value="contrast">
-                <img src="https://via.placeholder.com/50x50">
+              <label class="send__label">
+                <input class="send__input" type="checkbox" name="contrast">
+                <svg class="send__svg send__svg--contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                  <path class="send__path" fill="#283645" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                  <path class="send__path" fill="#283645" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                </svg>
               </label>
             </li>
           </ul>
-          <div class="send__buttons">
+          <div class="send__filter">
+            <div class="send__control">
+              <div class="send__bar"></div>
+              <div class="send__toggle" tabindex="0"></div>
+            </div>
+          </div>
+          <div class="send__buttons container">
             <button class="send__button" type="submit">Запостить</button>
             <button class="send__button" type="button">Отмена</button>
           </div>

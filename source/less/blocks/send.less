@@ -1,8 +1,15 @@
 .send {
   background-color: @basic-lightgrey;
+  margin-top: 43px;
+  padding-top: 19px;
+  padding-bottom: 30px;
 }
 
 .send__button {
+  width: 100%;
+  margin-bottom: 11px;
+  display: block;
+  padding: 16px 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
@@ -22,8 +29,90 @@
   }
 }
 
+.send__buttons {
+  width: 280px;
+}
+
 .send__list {
+  width: 214px;
+  min-height: 80px;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
+  margin-top: 27px;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.send__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.send__item input {
+  display: none;
+}
+
+.send__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+}
+
+.send__svg {
+  position: absolute;
+  display: block;
+  opacity: 0.3;
+
+  &--contrast {
+    top: 5px;
+  }
+
+  &--crop {
+    top: -3px;
+  }
+}
+
+.send__input:checked + .send__svg {
+  opacity: 1;
+  position: absolute;
+  display: block;
+}
+
+.send__input:checked + .send__svg .send__path {
+  fill: @basic-red;
+}
+
+.send__filter {
+  margin-top: 19px;
+  margin-bottom: 37px;
+  padding-bottom: 34px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(40, 54, 69, 0.1);;
+}
+
+.send__control {
+  margin: 0 auto;
+  width: 240px;
+  position: relative;
+}
+
+.send__bar {
+  background-color: @basic-grey;
+  height: 2px;
+}
+
+.send__toggle {
+  position: absolute;
+  top: -5px;
+  left: 193px;
+  background: @white;
+  width: 14px;
+  height: 14px;
+  border: 2px solid @basic-red;
+  border-radius: 50%;
+  box-sizing: border-box;
 }

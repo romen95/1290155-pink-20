@@ -5,6 +5,8 @@
   @media (min-width: @tablet-width) {
     background-color: inherit;
     order: 2;
+    padding-top: 0;
+    margin-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -16,6 +18,12 @@
 
 .form-application__title {
   margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .form-application__list {
@@ -51,7 +59,14 @@
   margin-left: 70px;
   display: block;
   cursor: pointer;
-  user-select: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 119px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 131px;
+  }
 }
 
 .form-application__radio-icon {
@@ -63,6 +78,11 @@
   height: 35px;
   border: 2px solid @extra-lightgrey;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    top: -5px;
+    left: -60px;
+  }
 }
 
 .form-application__input:checked + .form-application__radio-icon {
@@ -76,4 +96,9 @@
   background-image: url("../img/icon-point.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px;
+
+  @media (min-width: @tablet-width) {
+    top: -5px;
+    left: -60px;
+  }
 }

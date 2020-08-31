@@ -1,8 +1,17 @@
+.gallery {
+  padding-top: 45px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 92px;
+  }
+}
+
 .gallery__text {
   font-size: 14px;
   line-height: 24px;
   text-align: left;
   color: @basic-grey;
+  margin: 0;
 }
 
 .gallery__lead {
@@ -33,7 +42,6 @@
 }
 
 .gallery__post {
-  background-color: @basic-lightgrey;
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
@@ -46,8 +54,10 @@
 
   &--background {
     background-color: transparent;
+    margin-top: 50px;
 
     @media (min-width: @tablet-width) {
+      margin-top: 77px;
       margin-bottom: 50px;
     }
 
@@ -57,14 +67,40 @@
   }
 }
 
+.gallery__post--background img {
+  @media (min-width: @tablet-width) {
+    height: 509px;
+  }
+}
+
+.gallery__post img {
+  display: block;
+  margin: 0 auto;
+}
+
 .gallery__block {
   background-color: @basic-lightgrey;
+  padding: 18px 10px 18px 17px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 155px;
+    padding: 23px 10px 26px 30px;
+    box-sizing: border-box;
+  }
+
+  &--position {
+    @media (min-width: @tablet-width) {
+      position: relative;
+      min-height: 0;
+    }
+  }
 }
 
 .gallery__user {
   margin: 0;
+  margin-bottom: 1px;
   padding: 0;
-  display: block;
+  display: inline-block;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -73,9 +109,33 @@
 }
 
 .gallery__button {
+  position: relative;
   background-color: transparent;
   border: none;
   padding: 0;
+  padding-left: 31px;
+  margin-top: 11.25px;
+
+  &--position {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: 13px;
+      right: 60px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+  }
 }
 
 .gallery__like {
@@ -87,10 +147,12 @@
 }
 
 .gallery__grid {
+  margin-bottom: 43px;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 18px;
   }
 
   @media (min-width: @desktop-width) {
@@ -99,4 +161,11 @@
     column-gap: 20px;
     row-gap: 54px;
   }
+}
+
+.gallery__timer {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
