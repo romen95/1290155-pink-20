@@ -24,6 +24,10 @@
     border: 2px solid @extra-lightgrey;
     border-radius: 2px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 60px;
+  }
 }
 
 .form-achievements__list {
@@ -102,13 +106,5 @@
 .form-achievements__title {
   @media (min-width: @tablet-width) {
     margin-bottom: 49px;
-  }
-}
-
-.form-achievements__fieldset {
-  padding-bottom: 0;
-
-  @media (min-width: @desktop-width) {
-    padding-bottom: 60px;
   }
 }
