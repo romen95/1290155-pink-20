@@ -53,6 +53,7 @@
   }
 
   &--background {
+    position: relative;
     background-color: transparent;
     margin-top: 50px;
 
@@ -64,6 +65,31 @@
     @media (min-width: @desktop-width) {
       margin-bottom: 50px;
     }
+  }
+}
+
+.gallery__post--background::before {
+  content: "Панорама дня";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 20px;
+  width: 140px;
+  height: 36px;
+  background-color: @basic-red;
+  color: @white;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
   }
 }
 

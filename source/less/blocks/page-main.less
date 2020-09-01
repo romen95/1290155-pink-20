@@ -16,7 +16,7 @@
     background-position: center 0;
     background-repeat: no-repeat;
     padding-top: 176px;
-    padding-bottom: 94px;
+    padding-bottom: 59px;
     background-size: auto;
   }
 
@@ -55,6 +55,10 @@
 
   &--width {
     margin-bottom: 33px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 68px;
+    }
 
     @media (min-width: @desktop-width) {
       width: 360px;

@@ -12,7 +12,8 @@
   @media (min-width: @desktop-width) {
     width: 433px;
     padding: 0;
-    margin-right: 130px;
+    margin: 0;
+    margin-top: 5px;
   }
 }
 
@@ -21,8 +22,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0 25px;
   }
 }
 
@@ -56,23 +56,24 @@
 .form-application__item label {
   position: relative;
   text-align: left;
-  margin-left: 70px;
+  padding-left: 70px;
   display: block;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
-    margin-left: 119px;
+    margin-left: 59px;
+    padding-left: 60px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 131px;
+    margin-left: 71px;
   }
 }
 
 .form-application__radio-icon {
   position: absolute;
   top: -6px;
-  left: -69px;
+  left: 0;
   display: block;
   width: 35px;
   height: 35px;
@@ -81,7 +82,7 @@
 
   @media (min-width: @tablet-width) {
     top: -5px;
-    left: -60px;
+    left: 0;
   }
 }
 
@@ -90,15 +91,15 @@
   position: absolute;
   display: block;
   top: -6px;
-  left: -69px;
+  left: 0;
   width: 35px;
   height: 35px;
   background-image: url("../img/icon-point.svg");
   background-repeat: no-repeat;
-  background-position: 10px 10px;
+  background-position: center center;
 
   @media (min-width: @tablet-width) {
     top: -5px;
-    left: -60px;
+    left: 0;
   }
 }
