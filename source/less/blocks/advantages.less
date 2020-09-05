@@ -144,19 +144,12 @@
 }
 
 .advantages__wrapper {
-  background-color: @basic-lightgrey;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  padding-top: 149px;
-  margin-top: -66px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 119px;
-  }
+  background: @basic-lightgrey url("../img/bg-triangle-white.svg") no-repeat;
+  background-size: 100%;
+  padding-top: 77px;
 
   @media (min-width: @desktop-width) {
-    padding-top: 0;
-    margin-top: 0;
+    padding: 0;
   }
 }
 
@@ -185,16 +178,16 @@
 
 .advantages__block {
   padding-top: 41px;
+  padding-bottom: 6px;
 
   @media (min-width: @tablet-width) {
     padding-top: 47px;
-    margin-bottom: 54px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 61px;
     padding-bottom: 58px;
-    margin-bottom: 0;
   }
 }
 
