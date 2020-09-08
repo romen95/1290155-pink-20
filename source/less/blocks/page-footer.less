@@ -1,15 +1,14 @@
 .page-footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 41px;
+  padding-bottom: 36px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 36px;
-    padding-bottom: 40px;
+    padding-top: 68px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 75px;
-    padding-bottom: 70px;
+    padding-top: 55px;
+    padding-bottom: 69px;
   }
 }
 
@@ -24,7 +23,8 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    min-height: 51px;
+    min-height: 0;
+    align-items: stretch;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,6 +53,15 @@
   display: block;
 }
 
+.page-footer__logo[href]:hover path,
+.page-footer__logo[href]:focus path {
+  fill: @basic-red;
+}
+
+.page-footer__logo[href]:active {
+  opacity: 0.3;
+}
+
 .page-footer__list {
   list-style: none;
   margin: 0;
@@ -60,6 +69,15 @@
   width: 178px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    margin-left: 11px;
+  }
 }
 
 .page-footer__link {

@@ -1,13 +1,21 @@
 .form-comment {
+  padding-top: 38px;
+
   @media (min-width: @tablet-width) {
     order: 5;
+    padding-top: 0;
+    margin-top: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 57px;
+    padding: 0;
   }
 }
 
 .form-comment__input {
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-left: 20px;
+  padding: 14px 0 0 20px;
+  margin-bottom: 45px;
   border: 2px solid @extra-lightgrey;
   border-radius: 1px;
   width: 100%;
@@ -15,15 +23,21 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 496px;
-    height: 189px;
+    width: 500px;
+    height: 194px;
     margin: 0 auto;
-    margin-top: 42px;
-    margin-bottom: 53px;
+    margin-top: 21px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 816px;
-    height: 124px;
+    width: 820px;
+    height: 128px;
+    margin-top: 18px;
+    margin-bottom: 29px;
   }
+}
+
+.form-comment__title {
+  margin-bottom: 16px;
 }

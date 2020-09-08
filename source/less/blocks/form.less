@@ -1,3 +1,15 @@
+.form {
+  margin-top: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 73px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 65px;
+  }
+}
+
 .form__block {
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -20,18 +32,18 @@
   line-height: 30px;
   color: @basic-red;
   text-transform: uppercase;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     align-items: center;
     flex-direction: row;
-    margin-bottom: 38px;
+    margin-bottom: 53px;
   }
 }
 
 .form__input {
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-left: 20px;
+  padding: 21px 75px 21px 20px;
+  background-color: transparent;
   border: 2px solid @extra-lightgrey;
   border-radius: 1px;
   width: 100%;
@@ -78,23 +90,16 @@
   color: @basic-red;
   width: 218px;
   margin: 0 auto;
+  margin-bottom: 43px;
 
   @media (min-width: @tablet-width) {
     width: auto;
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
     width: auto;
-  }
-
-  &--none {
-    display: none;
-
-    @media (min-width: @tablet-width) {
-      display: block;
-    }
   }
 }
 
@@ -106,6 +111,7 @@
   @media (min-width: @tablet-width) {
     border: 2px solid @extra-lightgrey;
     border-radius: 2px;
+    padding-bottom: 14px;
   }
 }
 
@@ -131,12 +137,14 @@
   background: @basic-green;
   border: 2px solid @basic-green;
   border-radius: 1px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 296px;
+    width: 300px;
+    margin-bottom: 0;
   }
 }
 
@@ -145,6 +153,14 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+
+  &--lead {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: inline;
+    }
+  }
 }
 
 .form__star {
@@ -159,11 +175,15 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 66px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 66px;
   }
 }

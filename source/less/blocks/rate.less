@@ -4,6 +4,8 @@
 }
 
 .rate__table {
+  border-spacing: 0;
+
   @media (min-width: @tablet-width) {
     width: 616px;
     margin: 0 auto;
@@ -15,6 +17,10 @@
   }
 }
 
+.rate__title:first-child {
+  background-color: transparent;
+}
+
 .rate__title {
   font-weight: bold;
   font-size: 16px;
@@ -23,15 +29,18 @@
   text-transform: uppercase;
   color: @white;
   background-color: @basic-grey;
+  padding: 10px 0;
+  border-right: 2px solid @extra-lightgrey;
+}
 
-  &--price {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: @white;
-  }
+.rate__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @white;
+  margin: 0;
 }
 
 .rate__option {
@@ -40,6 +49,10 @@
   line-height: 30px;
   text-transform: uppercase;
   color: @basic-grey;
+
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+  }
 }
 
 .rate__toggle-list {
