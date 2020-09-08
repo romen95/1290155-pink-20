@@ -70,33 +70,52 @@
     }
 
     @media (min-width: @desktop-width) {
-      margin-bottom: 50px;
+      margin-bottom: 47px;
+      margin-top: 86px;
     }
   }
 }
 
-.gallery__post--background::before {
-  content: "Панорама дня";
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  right: 20px;
-  width: 140px;
-  height: 36px;
-  background-color: @basic-red;
-  color: @white;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase;
-  text-align: center;
+.gallery__box {
+  position: relative;
+  margin: 0 auto;
+  max-width: 320px;
 
   @media (min-width: @tablet-width) {
-    top: 57px;
+    max-width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+  }
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    background-color: @basic-red;
+    color: @white;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+      top: 57px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 130px;
+    }
   }
 }
 
@@ -119,6 +138,12 @@
   @media (min-width: @tablet-width) {
     min-height: 157px;
     padding: 23px 10px 26px 30px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 157px;
+    padding: 23px 10px 26px 27px;
     box-sizing: border-box;
   }
 

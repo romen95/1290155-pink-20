@@ -85,11 +85,13 @@
           Видите, как не хватает ваших?
         </p>
         <article class="gallery__post gallery__post--background">
-          <picture>
-            <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 1200px)">
-            <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
-            <img src="img/panorama-mobile@1x.jpg">
-          </picture>
+          <div class="gallery__box">
+            <picture>
+              <source srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            </picture>
+          </div>
           <div class="container">
             <div class="gallery__block gallery__block--position">
               <b class="gallery__user">Анна</b>
