@@ -1,27 +1,56 @@
 .rate {
-  display: none;
-  background-color: @basic-lightgrey;
+  background: @basic-lightgrey url("../img/bg-triangle-white.svg") no-repeat center top;
+  background-size: 100%;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 104px;
+    padding-bottom: 67px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 155px;
+    padding-bottom: 96px;
+  }
 }
 
 .rate__table {
   border-spacing: 0;
-
-  @media (min-width: @tablet-width) {
-    width: 616px;
-    margin: 0 auto;
-  }
+  width: 100%;
 
   @media (min-width: @desktop-width) {
-    width: 940px;
     margin: 0 auto;
   }
 }
 
 .rate__title:first-child {
   background-color: transparent;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.rate__title:nth-child(4) {
+  @media (min-width: @tablet-width) {
+    border-right: 2px solid @basic-grey;
+  }
+}
+
+.rate__cell {
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    border-right: 2px solid @extra-lightgrey;
+    border-bottom: 2px solid @extra-lightgrey;
+  }
+}
+
+.rate__cell:first-child {
+  @media (min-width: @tablet-width) {
+    border-left: 2px solid @extra-lightgrey;
+  }
 }
 
 .rate__title {
+  width: 153px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -31,6 +60,14 @@
   background-color: @basic-grey;
   padding: 10px 0;
   border-right: 2px solid @extra-lightgrey;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    padding: 0;
+    padding-top: 17px;
+    padding-bottom: 21px;
+    width: 168px;
+  }
 }
 
 .rate__text {
@@ -41,6 +78,10 @@
   text-transform: uppercase;
   color: @white;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .rate__option {
@@ -52,6 +93,12 @@
 
   @media (min-width: @tablet-width) {
     text-transform: none;
+    padding: 7px 0 7px 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    padding: 14px 0 14px 19px;
   }
 }
 
@@ -81,4 +128,29 @@
   opacity: 0.3;
   border: none;
   border-radius: 50%;
+}
+
+.rate__feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rate__feature-value {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &--true {
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/icon-yes.svg");
+  }
+
+  &--false {
+    width: 27px;
+    height: 26px;
+    background-image: url("../img/icon-no.svg");
+  }
 }
