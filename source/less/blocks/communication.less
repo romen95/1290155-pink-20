@@ -1,5 +1,13 @@
 .communication {
   padding-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 57px;
+  }
 }
 
 .communication__wrapper {
@@ -47,28 +55,42 @@
   line-height: 25px;
   text-align: center;
   color: @basic-grey;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .communication__link {
   display: block;
   margin: 0;
+  margin-top: 4px;
   padding: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
   color: @basic-red;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 21px;
+  }
 }
 
 .communication__paragraph {
   display: block;
   margin: 0;
+  margin-top: 4px;
   padding: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
   color: @basic-red;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 21px;
+  }
 }
 
 .communication__link:hover,
@@ -90,15 +112,18 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    width: auto;
+    width: 620px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 25px;
+    padding: 0 29px;
+    box-sizing: border-box;
+    margin-top: 33px;
   }
 
   @media (min-width: @desktop-width) {
     width: auto;
+    margin-top: 41px;
   }
 }
 
@@ -117,5 +142,15 @@
     @media (min-width: @tablet-width) {
       margin: 0 auto;
     }
+  }
+}
+
+.communication__item:nth-child(3) {
+  @media (min-width: @tablet-width) {
+    margin-top: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
   }
 }
