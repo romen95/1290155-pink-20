@@ -1,6 +1,7 @@
 .rate {
   background: @basic-lightgrey url("../img/bg-triangle-white.svg") no-repeat center top;
   background-size: 100%;
+  padding-bottom: 46px;
 
   @media (min-width: @tablet-width) {
     padding-top: 104px;
@@ -15,11 +16,22 @@
 }
 
 .rate__table {
+  width: 755px;
+  margin: 0 auto;
+  position: relative;
+  left: 47%;
+  transform: translateX(-58%);
   border-spacing: 0;
-  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 616px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
+    width: 940px;
+    transform: translateX(-50%);
   }
 }
 
@@ -36,10 +48,14 @@
 
 .rate__cell {
   background-color: @white;
+  border-right: 2px solid @extra-lightgrey;
+  border-bottom: 2px solid @extra-lightgrey;
+  padding: 15px 2px;
 
   @media (min-width: @tablet-width) {
     border-right: 2px solid @extra-lightgrey;
     border-bottom: 2px solid @extra-lightgrey;
+    padding: 0;
   }
 }
 
@@ -50,7 +66,7 @@
 }
 
 .rate__title {
-  width: 153px;
+  width: 100%;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -58,8 +74,21 @@
   text-transform: uppercase;
   color: @white;
   background-color: @basic-grey;
-  padding: 10px 0;
+  padding: 0 95px 11px 95px;
   border-right: 2px solid @extra-lightgrey;
+
+  @media (min-width: @tablet-width) {
+    width: 153px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @white;
+    background-color: @basic-grey;
+    padding: 10px 0;
+    border-right: 2px solid @extra-lightgrey;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
@@ -71,11 +100,21 @@
 }
 
 .rate__title--hit {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     position: relative;
   }
 
   &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../img/bg-hit.svg") no-repeat 0 0;
+    width: 74px;
+    height: 74px;
+
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
@@ -94,6 +133,17 @@
   }
 
   &::after {
+    content: "Хит";
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 8px;
+    top: 8px;
+    width: 61px;
+    height: 61px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+
     @media (min-width: @tablet-width) {
       content: "Хит";
       position: absolute;
@@ -137,12 +187,12 @@
 
   @media (min-width: @tablet-width) {
     text-transform: none;
-    padding: 7px 0 7px 16px;
+    padding: 8px 0 7px 13px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
-    padding: 14px 0 14px 19px;
+    padding: 16px 0 14px 19px;
   }
 }
 
@@ -177,7 +227,11 @@
 .rate__feature {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+  }
 }
 
 .rate__feature-value {
@@ -197,4 +251,71 @@
     height: 26px;
     background-image: url("../img/icon-no.svg");
   }
+}
+
+.rate__wrapper {
+  width: 320px;
+  overflow: hidden;
+  padding-top: 103px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    width: 640px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.rate__toggle-list {
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 41px;
+  padding: 0;
+  display: flex;
+  width: 61px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.rate__toggle {
+  display: block;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: @basic-grey;
+  opacity: 0.3;
+  border: none;
+  border-radius: 50%;
+}
+
+.rate__toggle:hover,
+.rate__toggle:focus {
+  opacity: 0.6;
+}
+
+.rate__toggle:active {
+  opacity: 0.1;
+}
+
+.rate__toggle--current {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 3px solid @basic-grey;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.rate__toggle--current:hover,
+.rate__toggle--current:focus,
+.rate__toggle--current:active {
+  opacity: 1;
 }
