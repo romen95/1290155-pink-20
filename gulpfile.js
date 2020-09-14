@@ -117,14 +117,23 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
+// Html
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"))
+}
+
+exports.html = html;
+
 // Build
 
 const build = gulp.series(
-  "clean",
-  "copy",
-  "css",
-  "sprite",
-  "html"
+  clean,
+  copy,
+  styles,
+  sprite,
+  html
 );
 
 exports.build = build;

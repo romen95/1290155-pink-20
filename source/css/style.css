@@ -2715,6 +2715,158 @@ img {
 .form-comment__title {
   margin-bottom: 16px;
 }
+.modal {
+  position: fixed;
+  margin: 0 auto;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+  min-height: 289px;
+  background: #FFFFFF;
+  width: 320px;
+  box-sizing: border-box;
+  top: 150px;
+  right: 0;
+  left: 0;
+}
+@media (min-width: 660px) {
+  .modal {
+    width: 460px;
+    min-height: 363px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal {
+    width: 780px;
+    min-height: 377px;
+  }
+}
+.modal--required {
+  display: none;
+  padding: 40px 0 49px 0;
+}
+@media (min-width: 1200px) {
+  .modal--required {
+    padding: 40px 0 0 0;
+  }
+}
+.modal--send {
+  display: none;
+  padding: 40px 0 0 0;
+}
+.modal__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+}
+@media (min-width: 660px) {
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.modal__title br {
+  display: none;
+}
+@media (min-width: 660px) {
+  .modal__title br {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .modal__title br {
+    display: none;
+  }
+}
+.modal__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 660px) {
+  .modal__text {
+    font-size: 18px;
+  }
+}
+.modal__text br {
+  display: block;
+}
+@media (min-width: 660px) {
+  .modal__text br {
+    display: none;
+  }
+}
+.modal__button {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #2AAB6D;
+  border: 2px solid #2AAB6D;
+  border-radius: 1px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.modal--send .modal__background {
+  background: #F2F2F2;
+  padding: 49px 20px 54px 20px;
+  margin-top: 36px;
+}
+@media (min-width: 660px) {
+  .modal--send .modal__background {
+    padding: 49px 80px 54px 80px;
+    margin-top: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal--send .modal__background {
+    padding: 51px 160px 52px 160px;
+    margin-top: 37px;
+  }
+}
+.modal--required .modal__background {
+  margin-top: 42px;
+  padding: 0 20px;
+}
+@media (min-width: 660px) {
+  .modal--required .modal__background {
+    margin-top: 32px;
+    padding: 0 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal--required .modal__background {
+    background: #F2F2F2;
+    margin-top: 61px;
+    padding: 50px 240px 52px 240px;
+  }
+}
+@media (min-width: 660px) {
+  .modal--required .modal__block {
+    padding: 0 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal--required .modal__block {
+    padding: 0 190px;
+  }
+}
+@media (min-width: 660px) {
+  .modal--send .modal__block {
+    padding: 0 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal--send .modal__block {
+    padding: 0 170px;
+  }
+}
 /*! Подключает стили страницы галереи */
 .gallery {
   padding-top: 45px;
