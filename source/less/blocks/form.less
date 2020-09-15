@@ -141,11 +141,25 @@
   padding-bottom: 14px;
   margin-bottom: 35px;
 
+  &:disabled {
+    background: @extra-lightgrey;
+    border: 2px solid @extra-lightgrey;
+  }
+
   @media (min-width: @tablet-width) {
     display: block;
     width: 300px;
     margin-bottom: 0;
   }
+}
+
+.form__button:hover,
+.form__button:focus {
+  background: #1c9b5e;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .form__small {

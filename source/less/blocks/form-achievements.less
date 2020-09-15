@@ -103,6 +103,16 @@
   background-position: 7px 9px;
 }
 
+.form-achievements__input:hover + .form-achievements__checkbox-icon,
+.form-achievements__input:focus + .form-achievements__checkbox-icon {
+  border: 2px solid @black;
+}
+
+.form-achievements__input:active + .form-achievements__checkbox-icon {
+  border: 2px solid @basic-red;
+}
+
+
 .form-achievements__title {
   @media (min-width: @tablet-width) {
     margin-bottom: 49px;
