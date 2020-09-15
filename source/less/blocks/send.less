@@ -55,6 +55,16 @@
   }
 }
 
+.send__button:hover,
+.send__button:focus {
+  background-color: @basic-red;
+  color: @white;
+}
+
+.send__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .send__buttons {
   position: relative;
   padding: 0;
@@ -249,6 +259,10 @@
   box-sizing: border-box;
 }
 
+.send__toggle:active {
+  background: @basic-red;
+}
+
 .send__item .send__bar {
   display: none;
 
@@ -267,6 +281,24 @@
   @media (min-width: @tablet-width) {
     opacity: 1;
     fill: @basic-red;
+  }
+}
+
+.send__item:hover .send__path,
+.send__item:focus .send__path {
+  opacity: 0.5;
+
+  @media (min-width: @tablet-width) {
+    opacity: 1;
+  }
+}
+
+.send__item--active:hover .send__path,
+.send__item--active:focus .send__path {
+  opacity: 1;
+
+  @media (min-width: @tablet-width) {
+    opacity: 1;
   }
 }
 
