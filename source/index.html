@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -47,7 +47,7 @@
               </g>
             </g>
           </svg>
-          <svg class="nav__svg nav__svg--cross" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <svg class="nav__svg nav__svg--cross" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
             <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg>
         </button>
@@ -93,17 +93,17 @@
             <ul class="intro__icons icons-list">
               <li class="icons-list__item">
                 <a class="icons-list__link" href="https://www.apple.com/ru/ios/app-store/">
-                  <img src="img/logo-apple.svg" width="47px" height="56px" aria-label="App Store" alt="Логотип компании Apple">
+                  <img src="img/logo-apple.svg" width="47" height="56" aria-label="App Store" alt="Логотип компании Apple">
                 </a>
               </li>
               <li class="icons-list__item">
                 <a class="icons-list__link" href="https://play.google.com/store">
-                  <img src="img/logo-android.svg" width="43px" height="47px" aria-label="Android" alt="Логотип Android">
+                  <img src="img/logo-android.svg" width="43" height="47" aria-label="Android" alt="Логотип Android">
                 </a>
               </li>
               <li class="icons-list__item">
                 <a class="icons-list__link" href="https://www.microsoft.com/ru-RU/store/apps">
-                  <img src="img/logo-microsoft.svg" width="44px" height="41px" aria-label="Microsoft" alt="Логотип Microsoft">
+                  <img src="img/logo-microsoft.svg" width="44" height="41" aria-label="Microsoft" alt="Логотип Microsoft">
                 </a>
               </li>
             </ul>
@@ -155,7 +155,7 @@
         </div>
         <section class="effect">
           <div class="effect__block container">
-            <img class="effect__svg" src="img/icon-timer.svg">
+            <img class="effect__svg" src="img/icon-timer.svg" alt="Изображение часов">
             <div class="effect__chunk">
               <h2 class="effect__title">
                 Эффект
@@ -273,14 +273,14 @@
                   <p class="rate__option">Розовый фильтр</p>
                 </td>
                 <td class="rate__cell">
-                  <div class="rate__feature" data-name="Розовый фильтр">
+                  <div class="rate__feature">
                     <span class="rate__feature-value rate__feature-value--true">
                       <span class="visually-hidden">Да</span>
                     </span>
                   </div>
                 </td>
                 <td class="rate__cell">
-                  <div class="rate__feature">
+                  <div class="rate__feature" data-name="Розовый фильтр">
                     <span class="rate__feature-value rate__feature-value--true">
                       <span class="visually-hidden">Да</span>
                     </span>
@@ -306,7 +306,7 @@
                   </div>
                 </td>
                 <td class="rate__cell">
-                  <div class="rate__feature">
+                  <div class="rate__feature" data-name="Смайлики">
                     <span class="rate__feature-value rate__feature-value--true">
                       <span class="visually-hidden">Да</span>
                     </span>
@@ -332,7 +332,7 @@
                   </div>
                 </td>
                 <td class="rate__cell">
-                  <div class="rate__feature">
+                  <div class="rate__feature" data-name="Комментарии">
                     <span class="rate__feature-value rate__feature-value--false">
                       <span class="visually-hidden">Нет</span>
                     </span>
@@ -394,7 +394,7 @@
           </ul>
         </div>
         <div class="map">
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.320894616062876!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1593431932958!5m2!1sru!2sru" width="320px" height="200px" allowfullscreen="" aria-hidden="false">
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.320894616062876!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1593431932958!5m2!1sru!2sru" width="320" height="200" allowfullscreen="" aria-hidden="false">
           </iframe>
         </div>
       </section>

@@ -46,25 +46,6 @@
   }
 }
 
-.rate__cell {
-  background-color: @white;
-  border-right: 2px solid @extra-lightgrey;
-  border-bottom: 2px solid @extra-lightgrey;
-  padding: 15px 2px;
-
-  @media (min-width: @tablet-width) {
-    border-right: 2px solid @extra-lightgrey;
-    border-bottom: 2px solid @extra-lightgrey;
-    padding: 0;
-  }
-}
-
-.rate__cell:first-child {
-  @media (min-width: @tablet-width) {
-    border-left: 2px solid @extra-lightgrey;
-  }
-}
-
 .rate__title {
   width: 100%;
   font-weight: bold;
@@ -92,9 +73,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
-    padding: 0;
-    padding-top: 17px;
-    padding-bottom: 21px;
+    padding: 17px 0 21px 0;
     width: 168px;
   }
 }
@@ -145,22 +124,33 @@
     font-weight: normal;
 
     @media (min-width: @tablet-width) {
-      content: "Хит";
-      position: absolute;
-      transform: rotate(-45deg);
       left: 3px;
       top: 3px;
-      width: 61px;
-      height: 61px;
-      font-size: 14px;
-      line-height: 30px;
-      font-weight: normal;
     }
 
     @media (min-width: @desktop-width) {
       left: 8px;
       top: 8px;
     }
+  }
+}
+
+.rate__cell {
+  background-color: @white;
+  border-right: 2px solid @extra-lightgrey;
+  border-bottom: 2px solid @extra-lightgrey;
+  padding: 15px 18px;
+
+  @media (min-width: @tablet-width) {
+    border-right: 2px solid @extra-lightgrey;
+    border-bottom: 2px solid @extra-lightgrey;
+    padding: 0;
+  }
+}
+
+.rate__cell:first-child {
+  @media (min-width: @tablet-width) {
+    border-left: 2px solid @extra-lightgrey;
   }
 }
 
@@ -196,34 +186,6 @@
   }
 }
 
-.rate__toggle-list {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  width: 56px;
-  justify-content: space-between;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.rate__toggle {
-  display: block;
-  padding: 0;
-  width: 6px;
-  height: 6px;
-  background-color: @basic-grey;
-  opacity: 0.3;
-  border: none;
-  border-radius: 50%;
-}
-
 .rate__feature {
   display: flex;
   align-items: center;
@@ -234,11 +196,23 @@
   }
 }
 
+.rate__feature::after {
+  content: attr(data-name);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .rate__feature-value {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  order: 2;
 
   &--true {
     width: 31px;
