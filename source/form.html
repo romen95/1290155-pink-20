@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/styles.min.css" rel="stylesheet">
+    <link rel="preload" href="./fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
     <header class="page-header">
@@ -38,7 +39,7 @@
       </div>
       <nav class="nav nav--no-js">
         <button class="nav__toggle" type="button">
-          <svg class="nav__svg nav__svg--burger" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+          <svg class="nav__svg nav__svg--burger" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="24" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
             <g id="miu">
               <g id="editor_list_view_hambuger_menu_glyph">
                 <g>
@@ -47,7 +48,7 @@
               </g>
             </g>
           </svg>
-          <svg class="nav__svg nav__svg--cross" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <svg class="nav__svg nav__svg--cross" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="24" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
             <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg>
         </button>
@@ -119,42 +120,42 @@
                 <ul class="form-achievements__list">
                   <li class="form-achievements__item">
                     <label class="form-achievements__text">
-                      <input class="form-achievements__input" type="checkbox" name="selfie" checked>
+                      <input class="visually-hidden form-achievements__input" type="checkbox" name="selfie" checked>
                       Сделал селфи с акулой
                       <span class="form-achievements__checkbox-icon"></span>
                     </label>
                   </li>
                   <li class="form-achievements__item">
                     <label class="form-achievements__text">
-                      <input class="form-achievements__input" type="checkbox" name="beach" checked>
+                      <input class="visually-hidden form-achievements__input" type="checkbox" name="beach" checked>
                       Обгорел на пляже
                       <span class="form-achievements__checkbox-icon"></span>
                     </label>
                   </li>
                   <li class="form-achievements__item">
                     <label class="form-achievements__text">
-                      <input class="form-achievements__input" type="checkbox" name="chack">
+                      <input class="visually-hidden form-achievements__input" type="checkbox" name="chack">
                       Видел Чака Норриса
                       <span class="form-achievements__checkbox-icon"></span>
                     </label>
                   </li>
                   <li class="form-achievements__item">
                     <label class="form-achievements__text">
-                      <input class="form-achievements__input" type="checkbox" name="souvenirs">
+                      <input class="visually-hidden form-achievements__input" type="checkbox" name="souvenirs">
                       Накупил сувениров
                       <span class="form-achievements__checkbox-icon"></span>
                     </label>
                   </li>
                   <li class="form-achievements__item">
                     <label class="form-achievements__text">
-                      <input class="form-achievements__input" type="checkbox" name="tower" checked>
+                      <input class="visually-hidden form-achievements__input" type="checkbox" name="tower" checked>
                       Удержал башню
                       <span class="form-achievements__checkbox-icon"></span>
                     </label>
                   </li>
                   <li class="form-achievements__item">
                     <label class="form-achievements__text">
-                      <input class="form-achievements__input" type="checkbox" name="hotel">
+                      <input class="visually-hidden form-achievements__input" type="checkbox" name="hotel">
                       Разгромил отель
                       <span class="form-achievements__checkbox-icon"></span>
                     </label>
@@ -191,21 +192,21 @@
                 <ul class="form-application__list">
                   <li class="form-application__item">
                     <label class="form-application__text">
-                      <input class="form-application__input" type="radio" name="os" value="ios" checked>
+                      <input class="visually-hidden form-application__input" type="radio" name="os" value="ios" checked>
                       Pink для iOS
                       <span class="form-application__radio-icon"></span>
                     </label>
                   </li>
                   <li class="form-application__item">
                     <label class="form-application__text">
-                      <input class="form-application__input" type="radio" name="os" value="android">
+                      <input class="visually-hidden form-application__input" type="radio" name="os" value="android">
                       Pink на Android
                       <span class="form-application__radio-icon"></span>
                     </label>
                   </li>
                   <li class="form-application__item">
                     <label class="form-application__text">
-                      <input class="form-application__input" type="radio" name="os" value="windows">
+                      <input class="visually-hidden form-application__input" type="radio" name="os" value="windows">
                       Windows Phone
                       <span class="form-application__radio-icon"></span>
                     </label>
@@ -232,7 +233,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo" href="index.html">
-          <svg class="logo-footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+          <svg class="logo-footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146" height="40" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g>
               <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
               <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
